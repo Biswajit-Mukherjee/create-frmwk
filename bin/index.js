@@ -20,6 +20,7 @@ const INDEX_HTML_TITLE = "Boilerplate app";
 const INDEX_HTML_DEFAULT_TEXT = `${INDEX_HTML_TITLE} running`;
 const INDEX_HTML_DEFAULT_LINK = "https://github.com/Biswajit-Mukherjee/create-project-boilerplate";
 const PROJECT_NAME = INDEX_HTML_DEFAULT_LINK.substring(38, INDEX_HTML_DEFAULT_LINK.length);
+const PORT = "3000";
 
 // Install Bebel and Parcel-bundler
 const INSTALL_BABEL =
@@ -27,7 +28,7 @@ const INSTALL_BABEL =
 const INSTALL_PARCEL_BUNDLER = "npm i parcel-bundler";
 
 // Start server at localhost:1234
-const START = "parcel src/index.html --open -p 1234";
+const START = `parcel src/index.html --open -p ${PORT}`;
 
 // File Contents
 

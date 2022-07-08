@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "./bin/index.js",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html -p 3000 --open"
   },
   "repository": {
     "type": "git",
