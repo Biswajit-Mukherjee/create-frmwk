@@ -26,18 +26,19 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
     
 ## Documentation
 
-After successful installation the server will automatically start at localhost:1234
+After successful installation the server will automatically start at localhost:3000 by default
 
 - To stop the server
 
     CTRL + C (CMD + C for Mac/Linux).
 
-- To start the server and finish the setup
+- To restart the server, copy and paste the following command in the scripts object in your package.json file.
 
 ```bash
-    npm start
+    "start": "parcel src/index.html -p 3000 --open"
 ```
 
+The port number can be changed to any port of your choice.
 
 ## Tech Stack
 
