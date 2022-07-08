@@ -12,9 +12,10 @@
     "url": "git+https://github.com/Biswajit-Mukherjee/create-project-boilerplate.git"
   },
   "keywords": [
+    "boilerplate",
     "boilerplate project",
     "template",
-    "framework"
+    "project"
   ],
   "author": "Biswajit Mukherjee",
   "license": "ISC",
