@@ -1,0 +1,25 @@
+{
+  "name": "create-project-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate template to create websites and web apps using HTML, CSS, Javascript, Babel and Parcel",
+  "main": "index.js",
+  "bin": "./bin/index.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Biswajit-Mukherjee/create-project-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate project",
+    "template",
+    "framework"
+  ],
+  "author": "Biswajit Mukherjee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Biswajit-Mukherjee/create-project-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Biswajit-Mukherjee/create-project-boilerplate#readme"
+}
