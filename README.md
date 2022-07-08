@@ -30,7 +30,7 @@ After successful installation the server will automatically start at localhost:1
 
 - To stop the server
 
-    CTRL + C (CMD + C for Mac/Linux)
+    CTRL + C (CMD + C for Mac/Linux).
 
 - To start the server and finish the setup
 
