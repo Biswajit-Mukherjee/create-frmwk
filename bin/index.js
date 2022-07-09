@@ -25,7 +25,7 @@ const PACKAGE_JSON_FILE_PATH = process.cwd() + "/package.json";
 const CREATE_PACKAGE_JSON_DEFAULT = "npm init -y";
 const BABELRC_FILE_PATH = process.cwd() + "/.babelrc";
 
-// Bebel and Parcel-bundler commands
+// Babel and Parcel-bundler commands
 const INSTALL_BABEL =
   "npm i -D babel-loader @babel/core @babel/preset-env @babel/cli @babel/plugin-transform-runtime @babel/runtime @babel/runtime-corejs3";
 const INSTALL_PARCEL_BUNDLER = "npm i -D parcel-bundler";
@@ -523,6 +523,7 @@ console.log(`${SUCCESS_LOG}`, "\n Generating package.json file... \n");
 runCliCommand(CREATE_PACKAGE_JSON_DEFAULT);
 writeToFile(PACKAGE_JSON_FILE_PATH, "");
 writeToFile(PACKAGE_JSON_FILE_PATH, PACKAGE_JSON_CONTENT);
+
 
 // Initialize project
 console.log("\nCreating project boilerplate. This might take a while.\n");

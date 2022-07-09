@@ -19,7 +19,7 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
 
 ## Features
 
- - Cross-browser compatible code(will run in ES5 browsers)
+ - Cross-browser compatible code
  - Inbuilt SASS support
  - Integrated support for Fontawesome icons using CDN
  - Comes with integrated development server, Hot Module Reload(HMR) enabled by default and support for ES Modules
