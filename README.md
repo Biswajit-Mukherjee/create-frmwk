@@ -17,6 +17,14 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
  - [Fontawesome Icon Library](https://fontawesome.com/)
 
 
+## Features
+
+ - Cross-browser compatible code(will run in ES5 browsers)
+ - Inbuilt SASS support
+ - Integrated support for Fontawesome icons using CDN
+ - Comes with integrated development server, Hot Module Reload(HMR) enabled by default and support for ES Modules
+
+
 ## Authors
 
 - [Biswajit Mukherjee](https://github.com/Biswajit-Mukherjee)
@@ -30,6 +38,7 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
   npx create-project-boilerplate
 ```
     
+
 ## Documentation
 
 To get started all you need is a working directory with Node installed. After running the npx command, it will automatically generate a package.json file, a .babelrc file and add all the required dependencies for you. Once finished the server will automatically start at localhost:3000 by default.
