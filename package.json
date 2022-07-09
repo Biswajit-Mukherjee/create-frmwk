@@ -1,6 +1,6 @@
 {
   "name": "create-project-boilerplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Boilerplate template to create websites and web apps using HTML, CSS, Javascript, Babel and Parcel",
   "main": "index.js",
   "bin": "./bin/index.js",

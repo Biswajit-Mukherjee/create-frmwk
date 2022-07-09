@@ -6,7 +6,7 @@ const fs = require("fs");
 const execSync = require("child_process").execSync;
 
 
-// #################################### VARIABLES & FILES ####################################
+// #################################### VARIABLES ####################################
 
 // Variables
 const SUCCESS_LOG = "\x1b[32m%s\x1b[0m";
@@ -21,16 +21,33 @@ const INDEX_HTML_DEFAULT_TEXT = `${INDEX_HTML_TITLE} running`;
 const INDEX_HTML_DEFAULT_LINK = "https://github.com/Biswajit-Mukherjee/create-project-boilerplate";
 const PROJECT_NAME = INDEX_HTML_DEFAULT_LINK.substring(38, INDEX_HTML_DEFAULT_LINK.length);
 const PORT = "3000";
+const PACKAGE_JSON_FILE_PATH = process.cwd() + "/package.json";
+const CREATE_PACKAGE_JSON_DEFAULT = "npm init -y";
 
-// Install Bebel and Parcel-bundler
+// Bebel and Parcel-bundler commands
 const INSTALL_BABEL =
   "npm i babel-loader @babel/core @babel/preset-env @babel/cli @babel/plugin-transform-runtime @babel/runtime";
 const INSTALL_PARCEL_BUNDLER = "npm i parcel-bundler";
 
-// Start server at localhost:1234
+// Start server command
 const START = `parcel src/index.html --open -p ${PORT}`;
 
-// File Contents
+
+// #################################### FILES ####################################
+
+// package.json file
+const PACKAGE_JSON_CONTENT = `{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html -p 3000 --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}`
 
 // HTML file
 const HTML_CONTENT = `<!DOCTYPE html>
@@ -471,6 +488,13 @@ const runCliCommand = command => {
 
 
 // #################################### CLI ####################################
+
+// Create & configure package.json
+console.log(`${SUCCESS_LOG}`, "\n Generating package.json file... \n");
+
+runCliCommand(CREATE_PACKAGE_JSON_DEFAULT);
+writeToFile(PACKAGE_JSON_FILE_PATH, "");
+writeToFile(PACKAGE_JSON_FILE_PATH, PACKAGE_JSON_CONTENT);
 
 // Initialize project
 console.log("\nCreating project boilerplate. This might take a while.\n");

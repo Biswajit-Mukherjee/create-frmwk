@@ -4,11 +4,16 @@
 Project boilerplate for a modern ES6+ cross-browser compatible workflow to create websites and web apps using HTML, CSS and Javascript. Uses Babel to ensure that the code you write is compatible across browsers and uses Parcel for file/module bundling and to provide a development server.
 
 
+## Prerequisites
 
-## Acknowledgements
+ - [Node v5.2+](https://nodejs.org/)
+
+
+## Comes with the following libraries and utilities
 
  - [Babel](https://babeljs.io/)
  - [Parcel](https://parceljs.org/)
+ - [Fontawesome Icon Library](https://fontawesome.com/)
 
 
 ## Authors
@@ -26,20 +31,16 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
     
 ## Documentation
 
-After successful installation the server will automatically start at localhost:3000 by default
+To get started all you need is a working directory with Node installed. After running the npx command the server will automatically start at localhost:3000 by default.
 
 - To stop the server
 
     CTRL + C (CMD + C for Mac/Linux).
 
-- To restart the server, copy and paste the following command in the scripts object in your package.json file.
+- To restart the server
 
 ```bash
-    "start": "parcel src/index.html -p 3000 --open"
+    npm start
 ```
 
-The port number can be changed to any port of your choice.
-
-## Tech Stack
-
-Javascript and Node
+This will open the page on a new tab in the browser. The port number can be changed to any port of your choice.
