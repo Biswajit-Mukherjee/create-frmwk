@@ -1,7 +1,7 @@
 
 # create-project-boilerplate
 
-Project boilerplate for a modern ES6+ cross-browser compatible workflow to create websites and web apps using HTML, CSS and Javascript. Uses Babel to ensure that the code you write is compatible across browsers and uses Parcel for file/module bundling and to provide a development server.
+Project boilerplate for a modern ES6+ cross-browser compatible workflow to create websites and web apps using HTML, CSS, SASS and Javascript. Uses Babel to ensure that the code you write is compatible across browsers and uses Parcel for file/module bundling and to provide a development server.
 
 
 ## Prerequisites
@@ -13,6 +13,7 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
 
  - [Babel](https://babeljs.io/)
  - [Parcel](https://parceljs.org/)
+ - [SASS](https://sass-lang.com/)
  - [Fontawesome Icon Library](https://fontawesome.com/)
 
 
@@ -31,7 +32,7 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
     
 ## Documentation
 
-To get started all you need is a working directory with Node installed. After running the npx command, it will automatically generate a package.json file and add all the required dependencies for you. Once finished the server will automatically start at localhost:3000 by default.
+To get started all you need is a working directory with Node installed. After running the npx command, it will automatically generate a package.json file, a .babelrc file and add all the required dependencies for you. Once finished the server will automatically start at localhost:3000 by default.
 
 - To stop the server
 

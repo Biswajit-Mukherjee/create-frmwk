@@ -23,11 +23,15 @@ const PROJECT_NAME = INDEX_HTML_DEFAULT_LINK.substring(38, INDEX_HTML_DEFAULT_LI
 const PORT = "3000";
 const PACKAGE_JSON_FILE_PATH = process.cwd() + "/package.json";
 const CREATE_PACKAGE_JSON_DEFAULT = "npm init -y";
+const BABELRC_FILE_PATH = process.cwd() + "/.babelrc";
 
 // Bebel and Parcel-bundler commands
 const INSTALL_BABEL =
-  "npm i babel-loader @babel/core @babel/preset-env @babel/cli @babel/plugin-transform-runtime @babel/runtime";
-const INSTALL_PARCEL_BUNDLER = "npm i parcel-bundler";
+  "npm i -D babel-loader @babel/core @babel/preset-env @babel/cli @babel/plugin-transform-runtime @babel/runtime @babel/runtime-corejs3";
+const INSTALL_PARCEL_BUNDLER = "npm i -D parcel-bundler";
+
+// Sass command
+const INSTALL_SASS = "npm i -D sass";
 
 // Start server command
 const START = `parcel src/index.html --open -p ${PORT}`;
@@ -48,6 +52,29 @@ const PACKAGE_JSON_CONTENT = `{
   "author": "",
   "license": "ISC"
 }`
+
+// .babelrc file
+const BABELRC_CONTENT = `{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": "3"
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 3,
+        "regenerator": true
+      }
+    ]
+  ]
+}
+`;
 
 // HTML file
 const HTML_CONTENT = `<!DOCTYPE html>
@@ -379,6 +406,7 @@ a {
 
 #root {
   display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -527,6 +555,14 @@ writeToFile(SRC_CSS_FILE_PATH, STYLES);
 // Write to JS file
 writeToFile(SRC_SCRIPT_FILE_PATH, SCRIPT_CONTENT);
 
+// Create & configure .babelrc
+console.log(`${SUCCESS_LOG}`, "\nGenerating .babelrc file... \n");
+createFile(BABELRC_FILE_PATH);
+writeToFile(BABELRC_FILE_PATH, BABELRC_CONTENT);
+
+
+// ################################# INSTALL DEPENDENCIES #################################
+
 console.log(`${SUCCESS_LOG}`, "\nInstalling dependencies...\n");
 
 // Install babel
@@ -534,6 +570,9 @@ runCliCommand(INSTALL_BABEL);
 
 // Install parcel-bundler
 runCliCommand(INSTALL_PARCEL_BUNDLER);
+
+// Install SASS
+runCliCommand(INSTALL_SASS);
 
 console.log(`${SUCCESS_LOG}`, "\nStarting development server...");
 console.log("\nPress CTRL + C to stop the server.\n");
