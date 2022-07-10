@@ -375,8 +375,9 @@ const STYLES = `@import url('https://fonts.googleapis.com/css2?family=Inter:wght
 
 :root {
   --bg-dark: #030607;
+  --clr-primary-300: #92e7fc;
   --clr-primary-400: #62d9fb;
-  --clr-primary-300: hsl(193, 95%, 78%);
+  --clr-primary-500: #2ecefa;
   --off-white: #f4f4f4;
 }
 
