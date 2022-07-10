@@ -104,7 +104,7 @@ const HTML_CONTENT = `<!DOCTYPE html>
     />
 
     <!-- Favicon (Add favicon PATH in href attribute) -->
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://i.ibb.co/zmZNvqG/favicon.png" type="image/x-icon" />
   </head>
 
   <body>
