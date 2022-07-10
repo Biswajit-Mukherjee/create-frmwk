@@ -33,6 +33,9 @@ const INSTALL_PARCEL_BUNDLER = "npm i -D parcel-bundler";
 // Sass command
 const INSTALL_SASS = "npm i -D sass";
 
+// ESLint command
+const INSTALL_ESLINT = "npm install eslint --save-dev";
+
 // Start server command
 const START = `parcel src/index.html --open -p ${PORT}`;
 
@@ -400,8 +403,9 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  font: inherit;
+  text-decoration: none;
 }
 
 #root {
@@ -574,6 +578,9 @@ runCliCommand(INSTALL_PARCEL_BUNDLER);
 
 // Install SASS
 runCliCommand(INSTALL_SASS);
+
+// Install ESLint
+runCliCommand(INSTALL_ESLINT);
 
 console.log(`${SUCCESS_LOG}`, "\nStarting development server...");
 console.log("\nPress CTRL + C to stop the server.\n");
