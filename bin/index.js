@@ -103,7 +103,7 @@ const HTML_CONTENT = `<!DOCTYPE html>
       referrerpolicy="no-referrer"
     />
 
-    <!-- Favicon (Add favicon PATH in href attribute) -->
+    <!-- Favicon (Remove default PATH and add favicon PATH in href attribute) -->
     <link rel="shortcut icon" href="https://i.ibb.co/zmZNvqG/favicon.png" type="image/x-icon" />
   </head>
 
