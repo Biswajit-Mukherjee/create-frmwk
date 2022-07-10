@@ -68,4 +68,4 @@ To get started all you need is a working directory with Node installed. After ru
     npm start
 ```
 
-This will open the page on a new tab in the browser. The port number can be changed to any port of your choice.
+This will open the page on a new tab in the browser. The port number can be changed to any port of your choice in the package.json file.
