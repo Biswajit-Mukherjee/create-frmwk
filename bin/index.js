@@ -377,8 +377,8 @@ const INDEX_HTML_CONTENT = `<!DOCTYPE html>
             href="${INDEX_HTML_DEFAULT_LINK}"
             target="_blank"
           >
-            <div><i class="fa-brands fa-github"></i></div>
-            <span>${PROJECT_NAME}</span>
+            <div class="link__icon"><i class="fa-brands fa-github"></i></div>
+            <div class="link__text"><span>${PROJECT_NAME}</span></div>
           </a>
         </div>
       </div>
@@ -540,12 +540,15 @@ body {
 }
 
 .link-wrapper {
+  background: inherit;
+  color: inherit;
   padding-top: 1.25rem;
-  vertical-align: middle;
 }
 
 .app .app__link {
   align-items: center;
+  background: inherit;
+  color: inherit;
   display: flex;
   font-size: 2rem;
   gap: .6rem;
@@ -554,10 +557,23 @@ body {
   transition: color .15s ease;
 }
 
-.app__link:hover,
-.app__link:active {
+.app__link:hover .link__text,
+.app__link:active .link__text {
   color: white;
   text-decoration: underline;
+}
+
+.app .app__link .link__icon,
+.app .app__link .link__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.app .app__link .link__icon > *,
+.app .app__link .link__text > * {
+  color: inherit;
+  margin: auto;
+  vertical-align: middle;
 }
 
 .app__link span {
