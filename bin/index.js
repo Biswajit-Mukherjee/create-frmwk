@@ -16,7 +16,8 @@ const SUCCESS_LOG = "\x1b[32m%s\x1b[0m";
 const SRC_DIR_PATH = "/src";
 const SRC_SCRIPTS_DIR_PATH = SRC_DIR_PATH + "/scripts";
 const SRC_STYLES_DIR_PATH = SRC_DIR_PATH + "/styles";
-const SRC_CSS_FILE_PATH = process.cwd() + SRC_STYLES_DIR_PATH + "/main.css";
+const SRC_BASE_CSS_FILE_PATH = process.cwd() + SRC_STYLES_DIR_PATH + "/base.css";
+const SRC_MAIN_CSS_FILE_PATH = process.cwd() + SRC_STYLES_DIR_PATH + "/main.css";
 const SRC_SCRIPT_FILE_PATH = process.cwd() + SRC_SCRIPTS_DIR_PATH + "/main.js";
 const INDEX_HTML_FILE_PATH = process.cwd() + SRC_DIR_PATH + "/index.html";
 const INDEX_HTML_TITLE = "Boilerplate app";
@@ -27,6 +28,7 @@ const PORT = "3000";
 const PACKAGE_JSON_FILE_PATH = process.cwd() + "/package.json";
 const CREATE_PACKAGE_JSON_DEFAULT = "npm init -y";
 const BABELRC_FILE_PATH = process.cwd() + "/.babelrc";
+
 
 // Babel and Parcel-bundler commands
 const INSTALL_BABEL =
@@ -91,7 +93,7 @@ const BABELRC_CONTENT = `{
 `;
 
 // HTML file
-const HTML_CONTENT = `<!DOCTYPE html>
+const INDEX_HTML_CONTENT = `<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Metadata -->
@@ -103,6 +105,7 @@ const HTML_CONTENT = `<!DOCTYPE html>
     <title>${INDEX_HTML_TITLE}</title>
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/main.css" />
 
     <!-- Fontawesome icon library -->
@@ -387,8 +390,99 @@ const HTML_CONTENT = `<!DOCTYPE html>
 </html>
 `;
 
-// CSS file
-const STYLES = `@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// CSS files
+const BASE_CSS_STYLES = `/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  font: 400 1rem/1.54 Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+`;
+
+const MAIN_CSS_STYLES = `@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
   --bg-dark: #030607;
@@ -399,36 +493,13 @@ const STYLES = `@import url('https://fonts.googleapis.com/css2?family=Inter:wght
   --off-white: #f4f4f4;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  height: 100vh;
-  scroll-behavior: smooth;
-  width: 100vw;
-}
-
 body {
-  background: var(--bg-dark);
-  color: var(--off-white);
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  height: 100%;
-  line-height: 1.54;
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
-}
-
-a {
-  color: inherit;
-  font: inherit;
-  text-decoration: none;
 }
 
 #root {
+  background: var(--bg-dark);
+  color: var(--off-white);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -579,14 +650,16 @@ createFile(SRC_SCRIPT_FILE_PATH);
 // Create src/styles folder
 createDir(SRC_STYLES_DIR_PATH);
 
-// Create src/styles/style.css file
-createFile(SRC_CSS_FILE_PATH);
+// Create src/styles/base.css & main.css files
+createFile(SRC_BASE_CSS_FILE_PATH);
+createFile(SRC_MAIN_CSS_FILE_PATH);
 
 // Write to HTML file
-writeToFile(INDEX_HTML_FILE_PATH, HTML_CONTENT);
+writeToFile(INDEX_HTML_FILE_PATH, INDEX_HTML_CONTENT);
 
 // Write to CSS file
-writeToFile(SRC_CSS_FILE_PATH, STYLES);
+writeToFile(SRC_BASE_CSS_FILE_PATH, BASE_CSS_STYLES);
+writeToFile(SRC_MAIN_CSS_FILE_PATH, MAIN_CSS_STYLES);
 
 // Write to JS file
 writeToFile(SRC_SCRIPT_FILE_PATH, SCRIPT_CONTENT);
