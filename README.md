@@ -38,7 +38,7 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
   npx create-project-boilerplate
 ```
 
-To know more, refer the [docs](#Documentation)
+To know more, refer to the [docs](#Documentation)
 
 ## Documentation
 
