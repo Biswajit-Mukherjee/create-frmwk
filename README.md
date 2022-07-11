@@ -50,7 +50,7 @@ Create a working directory and navigate to that directory in the terminal. Run t
 
 This will automatically generate a package.json file, a .babelrc file and install all the required dependencies for you. Once finished the server will start at localhost:3000 by default. It will rebuild your website/app as you make changes in the src folder. Once the website/app is production ready, the dist folder can be deployed to the server.
 
-- To run tests
+- To run tests using Jest
 
 ```bash
     npm test
