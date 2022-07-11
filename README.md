@@ -1,47 +1,34 @@
-
-
 # create-project-boilerplate
 
-Project boilerplate for a modern ES6+ cross-browser compatible workflow to create websites and web apps using HTML, CSS, SASS and Javascript. Uses Babel to ensure that the code you write is compatible across browsers and uses Parcel for file/module bundling and to provide a development server. Uses ESLint for linting.
-
-
-
+Project boilerplate for a modern ES6+ cross-browser compatible workflow to create websites and web apps using HTML, CSS, SASS and Javascript. Uses Babel to ensure that the code you write is compatible across browsers and uses Parcel for file/module bundling and to provide a development server. Uses ESLint for linting and Jest, testing-library for testing.
 
 ## Prerequisites
 
- - [Node v5.2+](https://nodejs.org/)
-
-
-
+- [Node v5.2+](https://nodejs.org/)
 
 ## Comes with the following libraries and utilities
 
- - [Babel](https://babeljs.io/)
- - [Parcel](https://parceljs.org/)
- - [SASS](https://sass-lang.com/)
- - [ESLint](https://eslint.org/)
- - [Fontawesome Icon Library](https://fontawesome.com/)
-
-
-
+- [Babel](https://babeljs.io/)
+- [Parcel](https://parceljs.org/)
+- [SASS](https://sass-lang.com/)
+- [ESLint](https://eslint.org/)
+- [Jest](https://jestjs.io/)
+- [Testing Library](https://testing-library.com/)
+- [Fontawesome Icon Library](https://fontawesome.com/)
 
 ## Features
 
- - Cross-browser compatible code. Write code for the future that is supported by browser versions of the past
- - Inbuilt SASS support
- - Integrated support for Fontawesome icons using CDN. Directly use the fontawesome icon classes out of the box without any configuration
- - Comes with integrated development server, Hot Module Reload(HMR) enabled by default and support for ES Modules
- - Comes with ESLint support to quickly find and fix problems in your Javascript code
-
-
-
+- Cross-browser compatible code. Write code for the future that is supported by browser versions of the past
+- Inbuilt SASS support
+- Integrated support for Fontawesome icons using CDN. Directly use the fontawesome icon classes out of the box without any configuration
+- Comes with integrated development server, Hot Module Reload(HMR) enabled by default and support for ES Modules
+- Comes with ESLint support to quickly find and fix problems in your Javascript code
+- Strict mode enabled by default to ensure good code syntax
+- Comes with testing libraries - Jest & testing-library/dom
 
 ## Authors
 
 - [Biswajit Mukherjee](https://github.com/Biswajit-Mukherjee)
-
-
-
 
 ## Installation
 
@@ -51,16 +38,27 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
   npx create-project-boilerplate
 ```
 
-
-
+To know more, refer the [docs](#Documentation)
 
 ## Documentation
 
-To get started all you need is a working directory with Node installed. After running the npx command, it will automatically generate a package.json file, a .babelrc file and add all the required dependencies for you. Once finished the server will automatically start at localhost:3000 by default. It will automatically rebuild your website/app as you make changes in the src folder. Once the website/app is production ready, the dist folder can be deployed.
+Create a working directory and navigate to that directory in the terminal. Run the following command:
+
+```bash
+  npx create-project-boilerplate
+```
+
+This will automatically generate a package.json file, a .babelrc file and install all the required dependencies for you. Once finished the server will start at localhost:3000 by default. It will rebuild your website/app as you make changes in the src folder. Once the website/app is production ready, the dist folder can be deployed to the server.
+
+- To run tests
+
+```bash
+    npm test
+```
 
 - To stop the server
 
-    CTRL + C (CMD + C for Mac/Linux).
+  CTRL + C (CMD + C for Mac/Linux)
 
 - To restart the server
 

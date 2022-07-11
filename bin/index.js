@@ -27,7 +27,7 @@ const BABELRC_FILE_PATH = process.cwd() + "/.babelrc";
 
 // Babel and Parcel-bundler commands
 const INSTALL_BABEL =
-  "npm i -D babel-loader @babel/core @babel/preset-env @babel/cli @babel/plugin-transform-runtime @babel/runtime @babel/runtime-corejs3";
+  "npm i -D babel-loader babel-jest @babel/core @babel/preset-env @babel/cli @babel/plugin-transform-runtime @babel/runtime @babel/runtime-corejs3";
 const INSTALL_PARCEL_BUNDLER = "npm i -D parcel-bundler";
 
 // Sass command
@@ -35,6 +35,12 @@ const INSTALL_SASS = "npm i -D sass";
 
 // ESLint command
 const INSTALL_ESLINT = "npm install eslint --save-dev";
+
+// Jest command
+const INSTALL_JEST = "npm install --save-dev jest";
+
+// testing-library dom command
+const INSTALL_TESTING_LIBRARY_DOM = "npm install --save-dev @testing-library/dom";
 
 // Start server command
 const START = `parcel src/index.html --open -p ${PORT}`;
@@ -49,7 +55,8 @@ const PACKAGE_JSON_CONTENT = `{
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html -p 3000 --open"
+    "start": "parcel src/index.html -p 3000 --open",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -63,7 +70,8 @@ const BABELRC_CONTENT = `{
       "@babel/preset-env",
       {
         "useBuiltIns": "entry",
-        "corejs": "3"
+        "corejs": "3",
+        "targets": {"node": "current"}
       }
     ]
   ],
@@ -470,7 +478,10 @@ a {
 `;
 
 // Javascript file
-const SCRIPT_CONTENT = `console.log("${INDEX_HTML_DEFAULT_TEXT}!")`;
+const SCRIPT_CONTENT = `"use strict";
+
+console.log("${INDEX_HTML_DEFAULT_TEXT}!");
+`;
 
 
 // #################################### FUNCTIONS ####################################
@@ -563,6 +574,7 @@ writeToFile(SRC_SCRIPT_FILE_PATH, SCRIPT_CONTENT);
 
 // Create & configure .babelrc
 console.log(`${SUCCESS_LOG}`, "\nGenerating .babelrc file... \n");
+
 createFile(BABELRC_FILE_PATH);
 writeToFile(BABELRC_FILE_PATH, BABELRC_CONTENT);
 
@@ -583,8 +595,14 @@ runCliCommand(INSTALL_SASS);
 // Install ESLint
 runCliCommand(INSTALL_ESLINT);
 
+// Install Jest
+runCliCommand(INSTALL_JEST);
+
+// Install testing-library/dom
+runCliCommand(INSTALL_TESTING_LIBRARY_DOM);
+
+// Start the development server
 console.log(`${SUCCESS_LOG}`, "\nStarting development server...");
 console.log("\nPress CTRL + C to stop the server.\n");
 
-// Start the development server
 runCliCommand(START);
