@@ -1,6 +1,6 @@
 # create-project-boilerplate
 
-Project boilerplate for a modern ES6+ cross-browser compatible workflow to create websites and web apps using HTML, CSS, SASS and Javascript. It contains a base.css reset file and a main.css file in the src/styles folder. Uses Babel to ensure that the code you write is compatible across browsers and uses Parcel for file/module bundling and to provide a development server. Uses ESLint for linting and Jest, testing-library for testing.
+Project boilerplate for a modern ES6+ cross-browser compatible workflow to create websites and web apps using HTML, CSS, SASS and Javascript. It contains a base.css reset file and a main.css file in the src/styles folder. Uses Babel to ensure that the code you write is compatible across browsers and uses Parcel for file/module bundling and to provide a development server. Uses ESLint for linting and Jest, @testing-library/dom for testing.
 
 ## Prerequisites
 
@@ -13,7 +13,7 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
 - [SASS](https://sass-lang.com/)
 - [ESLint](https://eslint.org/)
 - [Jest](https://jestjs.io/)
-- [Testing Library](https://testing-library.com/)
+- [DOM Testing Library](https://testing-library.com/docs/dom-testing-library/intro/)
 - [Fontawesome Icon Library](https://fontawesome.com/)
 
 ## Features
@@ -24,7 +24,7 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
 - Comes with integrated development server, Hot Module Reload(HMR) enabled by default and support for ES Modules
 - Comes with ESLint support to quickly find and fix problems in your Javascript code
 - Strict mode enabled by default to ensure good code syntax
-- Comes with testing libraries - Jest & testing-library/dom
+- Comes with testing libraries - Jest & DOM Testing Library
 
 ## Authors
 
