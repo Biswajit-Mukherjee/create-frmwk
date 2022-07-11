@@ -535,11 +535,12 @@ body {
   color: var(--clr-primary-600);
   font-size: 1.25rem;
   font-weight: 400;
+  padding-top: .25rem;
   text-align: center;
 }
 
 .link-wrapper {
-  padding: 1.25rem 0;
+  padding-top: 1.25rem;
 }
 
 .app .app__link {
