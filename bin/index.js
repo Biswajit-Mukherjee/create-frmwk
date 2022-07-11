@@ -584,21 +584,27 @@ writeToFile(BABELRC_FILE_PATH, BABELRC_CONTENT);
 console.log(`${SUCCESS_LOG}`, "\nInstalling dependencies...\n");
 
 // Install babel
+console.log("\nInstalling Babel...\n");
 runCliCommand(INSTALL_BABEL);
 
 // Install parcel-bundler
+console.log("\nInstalling Parcel...\n");
 runCliCommand(INSTALL_PARCEL_BUNDLER);
 
 // Install SASS
+console.log("\nInstalling SASS...\n");
 runCliCommand(INSTALL_SASS);
 
 // Install ESLint
+console.log("\nInstalling ESLint...\n");
 runCliCommand(INSTALL_ESLINT);
 
 // Install Jest
+console.log("\nInstalling Jest...\n");
 runCliCommand(INSTALL_JEST);
 
 // Install testing-library/dom
+console.log("\nInstalling @testing-library/dom...\n");
 runCliCommand(INSTALL_TESTING_LIBRARY_DOM);
 
 // Start the development server
