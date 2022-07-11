@@ -633,7 +633,7 @@ const runCliCommand = command => {
     // Run the node/ cli command
     execSync(`${command}`, { stdio: 'inherit' });
   } catch (e) {
-    // Log the error
+    isCliCmdfailed = true;
     console.error(`Failed to execute ${command}`, e);
   }
 };
