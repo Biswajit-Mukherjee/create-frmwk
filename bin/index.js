@@ -419,6 +419,7 @@ body {
   height: 100%;
   line-height: 1.54;
   width: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -482,7 +483,7 @@ a {
 
 .app__link:hover,
 .app__link:active {
-  color: var(--clr-primary-300);
+  color: white;
   text-decoration: underline;
 }
 
