@@ -38,9 +38,9 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
   npx create-project-boilerplate
 ```
 
-To know more, refer to the [docs](#Documentation)
+To know more, refer to the [usage](#Usage)
 
-## Documentation
+## Usage
 
 Create a working directory and navigate to that directory in the terminal. Run the following command:
 
