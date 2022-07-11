@@ -9,6 +9,9 @@ const execSync = require("child_process").execSync;
 // #################################### VARIABLES ####################################
 
 // Variables
+let isCliCmdfailed = false;
+
+const INSTALL_LOG = "\x1b[33m%s\x1b[0m";
 const SUCCESS_LOG = "\x1b[32m%s\x1b[0m";
 const SRC_DIR_PATH = "/src";
 const SRC_SCRIPTS_DIR_PATH = SRC_DIR_PATH + "/scripts";
@@ -112,7 +115,11 @@ const HTML_CONTENT = `<!DOCTYPE html>
     />
 
     <!-- Favicon (Remove default PATH and add favicon PATH in href attribute) -->
-    <link rel="shortcut icon" href="https://i.ibb.co/zmZNvqG/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="https://i.ibb.co/zmZNvqG/favicon.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body>
@@ -313,7 +320,7 @@ const HTML_CONTENT = `<!DOCTYPE html>
                 position: absolute;
                 width: 11px;
                 height: 76px;
-                background: #93dbe9;
+                background: #62d9fb;
                 left: 50px;
                 top: 50px;
                 transform: translate(-50%, -50%);
@@ -361,14 +368,16 @@ const HTML_CONTENT = `<!DOCTYPE html>
           </div>
         </div>
         <p class="app__text">${INDEX_HTML_DEFAULT_TEXT}</p>
-        <a
-          class="app__link"
-          href="${INDEX_HTML_DEFAULT_LINK}"
-          target="_blank"
-        >
-          <div><i class="fa-brands fa-github"></i></div>
-          <span>${PROJECT_NAME}</span>
-        </a>
+        <div class="link-wrapper">
+          <a
+            class="app__link"
+            href="${INDEX_HTML_DEFAULT_LINK}"
+            target="_blank"
+          >
+            <div><i class="fa-brands fa-github"></i></div>
+            <span>${PROJECT_NAME}</span>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -386,6 +395,7 @@ const STYLES = `@import url('https://fonts.googleapis.com/css2?family=Inter:wght
   --clr-primary-300: #92e7fc;
   --clr-primary-400: #62d9fb;
   --clr-primary-500: #2ecefa;
+  --clr-primary-600: #06bcef;
   --off-white: #f4f4f4;
 }
 
@@ -450,10 +460,14 @@ a {
 }
 
 .app .app__text {
-  color: var(--clr-primary-300);
+  color: var(--clr-primary-600);
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
+}
+
+.link-wrapper {
+  padding: 1.25rem 0;
 }
 
 .app .app__link {
@@ -468,7 +482,8 @@ a {
 
 .app__link:hover,
 .app__link:active {
-  color: var(--clr-primary-400);
+  color: var(--clr-primary-300);
+  text-decoration: underline;
 }
 
 .app__link span {
@@ -521,6 +536,9 @@ const writeToFile = (filePath, fileContent) => {
 
 // Execute cli command
 const runCliCommand = command => {
+  if (isCliCmdfailed) {
+    return;
+  }
   try {
     // Run the node/ cli command
     execSync(`${command}`, { stdio: 'inherit' });
@@ -584,27 +602,27 @@ writeToFile(BABELRC_FILE_PATH, BABELRC_CONTENT);
 console.log(`${SUCCESS_LOG}`, "\nInstalling dependencies...\n");
 
 // Install babel
-console.log("\nInstalling Babel...\n");
+console.log(`${INSTALL_LOG}`, "\nInstalling Babel...\n");
 runCliCommand(INSTALL_BABEL);
 
 // Install parcel-bundler
-console.log("\nInstalling Parcel...\n");
+console.log(`${INSTALL_LOG}`, "\nInstalling Parcel...\n");
 runCliCommand(INSTALL_PARCEL_BUNDLER);
 
 // Install SASS
-console.log("\nInstalling SASS...\n");
+console.log(`${INSTALL_LOG}`, "\nInstalling SASS...\n");
 runCliCommand(INSTALL_SASS);
 
 // Install ESLint
-console.log("\nInstalling ESLint...\n");
+console.log(`${INSTALL_LOG}`, "\nInstalling ESLint...\n");
 runCliCommand(INSTALL_ESLINT);
 
 // Install Jest
-console.log("\nInstalling Jest...\n");
+console.log(`${INSTALL_LOG}`, "\nInstalling Jest...\n");
 runCliCommand(INSTALL_JEST);
 
 // Install testing-library/dom
-console.log("\nInstalling @testing-library/dom...\n");
+console.log(`${INSTALL_LOG}`, "\nInstalling @testing-library/dom...\n");
 runCliCommand(INSTALL_TESTING_LIBRARY_DOM);
 
 // Start the development server
