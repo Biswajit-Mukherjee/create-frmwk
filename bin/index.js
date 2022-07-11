@@ -541,6 +541,7 @@ body {
 
 .link-wrapper {
   padding-top: 1.25rem;
+  vertical-align: middle;
 }
 
 .app .app__link {
