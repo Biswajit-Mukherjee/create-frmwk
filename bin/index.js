@@ -117,6 +117,9 @@ const INDEX_HTML_CONTENT = `<!DOCTYPE html>
       referrerpolicy="no-referrer"
     />
 
+    <!-- General Sans Font - fontshare -->
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,500,300,600,400,700&display=swap" rel="stylesheet">
+
     <!-- Favicon (Remove default PATH and add favicon PATH in href attribute) -->
     <link
       rel="shortcut icon"
@@ -485,16 +488,17 @@ select {
 const MAIN_CSS_STYLES = `@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --bg-dark: #030607;
+  --bg-dark: #1E1E1E;
   --clr-primary-300: #92e7fc;
   --clr-primary-400: #62d9fb;
   --clr-primary-500: #2ecefa;
   --clr-primary-600: #06bcef;
   --off-white: #f4f4f4;
+  --ff-prim: 'Inter', 'General Sans', Arial, Helvetica, sans-serif;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--ff-prim);
 }
 
 #root {
@@ -714,7 +718,7 @@ console.log(`${INSTALL_LOG}`, "\nInstalling Jest...\n");
 runCliCommand(INSTALL_JEST);
 
 // Install testing-library/dom
-console.log(`${INSTALL_LOG}`, "\nInstalling @testing-library/dom...\n");
+console.log(`${INSTALL_LOG}`, "\nInstalling DOM Testing Library...\n");
 runCliCommand(INSTALL_TESTING_LIBRARY_DOM);
 
 // Start the development server
