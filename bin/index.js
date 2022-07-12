@@ -489,11 +489,11 @@ const MAIN_CSS_STYLES = `@import url('https://fonts.googleapis.com/css2?family=I
 
 :root {
   --bg-dark: #1E1E1E;
-  --clr-primary-300: #92e7fc;
-  --clr-primary-400: #62d9fb;
-  --clr-primary-500: #2ecefa;
-  --clr-primary-600: #06bcef;
-  --off-white: #f4f4f4;
+  --clr-primary-300: #92E7FC;
+  --clr-primary-400: #62D9FB;
+  --clr-primary-500: #2ECEFA;
+  --clr-primary-600: #06BCEF;
+  --off-white: #F4F4F4;
   --ff-prim: 'Inter', 'General Sans', Arial, Helvetica, sans-serif;
 }
 
