@@ -106,7 +106,7 @@ my-dir
 
 ```
 
-Once the setup is finished the server will start at [http://localhost:3000](http://localhost:3000) by default. It will rebuild your website/app everttime you make changes. Once the website/app is production ready, the dist folder can be deployed to the server.
+Once the setup is finished the server will start at [http://localhost:3000](http://localhost:3000) by default. It will rebuild your website/app everttime you make changes. Once the website/app is production ready, the **dist** folder can be deployed to the server.
 
 - To run tests using Jest
 
