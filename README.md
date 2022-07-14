@@ -1,4 +1,5 @@
 # create-project-boilerplate
+[](https://badge.fury.io/js/create-project-boilerplate.svg)
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
