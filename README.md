@@ -43,6 +43,31 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
 
 To know more, refer to the [usage](#Usage) section
 
+
+## Creating the boilerplate
+Inside the working directory, it will generate the initial project structure and install the required dependencies:
+
+<dir>
+├── node_modules
+├── package.json
+├── package-lock.json
+├── dist
+│   ├── index.html
+│   └── <!-- bundled css and js files -->
+└── src
+│   ├── scripts
+│   │   └── main.js
+│   └── styles
+│       ├── base.css
+│       ├── main.css
+│       └── index.css
+├── index.html
+├── tailwing.config.js
+├── .parcel-cache
+├── .babelrc
+└── .postcssrc
+
+
 ## Usage
 
 Create a working directory and navigate to that directory in the terminal. Run the following command:
