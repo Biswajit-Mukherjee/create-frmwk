@@ -27,12 +27,12 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow with no 
 
 ## Features
 
-- Cross-browser compatible code using Babel. Write code for the future that is supported by browser versions of the past
-- Integrated Fontawesome support using CDN. Directly use the fontawesome icon classes out of the box without any configuration
-- Comes with integrated development server, Hot Module Reload(HMR), Strict mode and support for ES Modules
-- Comes with Alpine.js, SASS & tailwindcss built-in to help you write industry-level code
-- Comes with ESLint to quickly find and fix problems in your Javascript code
-- Comes with testing libraries - Jest & DOM Testing Library
+- Cross-browser compatible code using **[Babel](https://babeljs.io/)**
+- Integrated **[Fontawesome](https://fontawesome.com/)** support using CDN
+- Hot Module Reload(HMR) and support for ES Modules using **[Parcel](https://parceljs.org/)**
+- Comes with **[Alpine.js](https://alpinejs.dev/)**, **[SASS](https://sass-lang.com/)** & **[tailwindcss](https://tailwindcss.com/)** built-in to help you write industry-level code
+- **[ESLint](https://eslint.org/)** to quickly find and fix problems in your Javascript code
+- Comes with testing libraries - **[Jest](https://jestjs.io/)** & **[DOM Testing Library](https://testing-library.com/)**
 
 
 ## Authors
