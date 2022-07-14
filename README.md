@@ -38,7 +38,7 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow with no 
 
 ## Creating a boilerplate
 
-**<h4>npx</h4>**
+**<h3>npx</h3>**
 
 ```bash
   npx create-project-boilerplate
