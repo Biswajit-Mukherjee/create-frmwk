@@ -88,7 +88,7 @@ my-dir
 ├── node_modules
 ├── package.json
 ├── package-lock.json
-├── tailwing.config.js
+├── tailwind.config.js
 ├── index.html
 ├── .parcel-cache
 ├── .babelrc
