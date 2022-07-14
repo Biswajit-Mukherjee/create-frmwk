@@ -88,21 +88,22 @@ my-dir
 ├── node_modules
 ├── package.json
 ├── package-lock.json
+├── tailwing.config.js
+├── index.html
+├── .parcel-cache
+├── .babelrc
+├── .postcssrc
 ├── dist
 │   ├── index.html
 │   └── # bundled css and js files
-├── src
-│   ├── scripts
-│   │   └── main.js
-│   └── styles
-│       ├── base.css
-│       ├── main.css
-│       └── index.css
-├── index.html
-├── tailwing.config.js
-├── .parcel-cache
-├── .babelrc
-└── .postcssrc
+└── src
+    ├── scripts
+    │   └── main.js
+    └── styles
+        ├── base.css
+        ├── main.css
+        └── index.css
+
 ```
 
 Once the setup is finished the server will start at [http://localhost:3000](http://localhost:3000) by default. It will rebuild your website/app everttime you make changes. Once the website/app is production ready, the dist folder can be deployed to the server.
