@@ -91,7 +91,7 @@ my-dir
 ├── dist
 │   ├── index.html
 │   └── # bundled css and js files
-└── src
+├── src
 │   ├── scripts
 │   │   └── main.js
 │   └── styles
