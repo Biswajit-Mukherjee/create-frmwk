@@ -90,7 +90,7 @@ my-dir
 ├── package-lock.json
 ├── dist
 │   ├── index.html
-│   └── *bundled css and js files*
+│   └── # bundled css and js files
 └── src
 │   ├── scripts
 │   │   └── main.js
