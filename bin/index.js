@@ -753,7 +753,7 @@ console.log(`${INSTALL_LOG}`, "\nInstalling DOM Testing Library...\n");
 runCliCommand(INSTALL_TESTING_LIBRARY_DOM);
 
 // Create & configure .babelrc
-console.log("\Finishing setup... \n");
+console.log("\nFinishing setup... \n");
 
 createFile(BABELRC_FILE_PATH);
 writeToFile(BABELRC_FILE_PATH, BABELRC_CONTENT);
