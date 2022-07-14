@@ -61,7 +61,7 @@ As long as it is **5.2 or later**, you're good to go!
   npx create-project-boilerplate
 ```
 
-To know more, refer to the [usage](#Usage) section
+To know more, refer to the [usage](#Usage) section.
 
 
 ## Usage
@@ -90,7 +90,7 @@ my-dir
 ├── package-lock.json
 ├── dist
 │   ├── index.html
-│   └── <!-- bundled css and js files -->
+│   └── *bundled css and js files*
 └── src
 │   ├── scripts
 │   │   └── main.js
