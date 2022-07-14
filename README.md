@@ -61,12 +61,6 @@ To know more, refer to the [usage](#Usage) section
   npx create-project-boilerplate
 ```
 
-Create a working directory and navigate to that directory in the terminal. Run the following command:
-
-```bash
-  npx create-project-boilerplate
-```
-
 Inside the working directory, it will generate the initial project structure and install the required dependencies:
 
 ```bash
@@ -99,9 +93,7 @@ Once the setup is finished the server will start at [http://localhost:3000](http
     npm test
 ```
 
-- To stop the server
-
-  CTRL + C (CMD + C for Mac/Linux)
+- To stop the server press CTRL + C (CMD + C for Mac/Linux).
 
 - To restart the server
 
