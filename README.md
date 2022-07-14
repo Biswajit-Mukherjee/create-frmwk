@@ -9,7 +9,7 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow with no 
 
 ## Prerequisites
 
-- [Node v5.2+](https://nodejs.org/)
+- [npm v5.2 or later](https://nodejs.org/)
 
 
 ## Comes with the following libraries and utilities
