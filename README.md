@@ -51,7 +51,7 @@ Create a working directory and navigate to that directory in the terminal. Run t
   npx create-project-boilerplate
 ```
 
-This will automatically generate a package.json file, a .babelrc file and install all the required dependencies for you. Once finished the server will start at localhost:3000 by default. It will rebuild your website/app everttime you make changes. Once the website/app is production ready, the dist folder can be deployed to the server.
+This will automatically generate and configure a package.json file, a .babelrc file, a .postcssrc file, a tailwind.config.js file and install all the required dependencies for you. Once finished the server will start at localhost:3000 by default. It will rebuild your website/app everttime you make changes. Once the website/app is production ready, the dist folder can be deployed to the server.
 
 - To run tests using Jest
 
