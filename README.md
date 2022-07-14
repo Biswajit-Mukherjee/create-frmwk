@@ -113,7 +113,7 @@ Once the setup is finished the server will start at [http://localhost:3000](http
     npm test
 ```
 
-- To stop the server press CTRL + C (CMD + C for Mac/Linux).
+- To stop the server press **CTRL + C** (**CMD + C** for Mac/Linux).
 
 - To restart the server
 
