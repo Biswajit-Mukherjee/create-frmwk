@@ -28,6 +28,7 @@ const PORT = "3000";
 const PACKAGE_JSON_FILE_PATH = process.cwd() + "/package.json";
 const CREATE_PACKAGE_JSON_DEFAULT = "npm init -y";
 const BABELRC_FILE_PATH = process.cwd() + "/.babelrc";
+const ALPINEJS_CDN = `<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>`;
 
 
 // Babel and Parcel-bundler commands
@@ -126,6 +127,11 @@ const INDEX_HTML_CONTENT = `<!DOCTYPE html>
       href="https://i.ibb.co/BBKcqrZ/favicon.jpg"
       type="image/x-icon"
     />
+
+    <!-- Alpine.js CDN -->
+    ${ALPINEJS_CDN}
+
+    <!-- Scripts -->
   </head>
 
   <body>
