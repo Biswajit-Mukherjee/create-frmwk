@@ -16,6 +16,7 @@ const SUCCESS_LOG = "\x1b[32m%s\x1b[0m";
 const SRC_DIR_PATH = "/src";
 const SRC_SCRIPTS_DIR_PATH = SRC_DIR_PATH + "/scripts";
 const SRC_STYLES_DIR_PATH = SRC_DIR_PATH + "/styles";
+const SRC_INDEX_CSS_FILE_PATH = process.cwd() + SRC_STYLES_DIR_PATH + "/index.css";
 const SRC_BASE_CSS_FILE_PATH = process.cwd() + SRC_STYLES_DIR_PATH + "/base.css";
 const SRC_MAIN_CSS_FILE_PATH = process.cwd() + SRC_STYLES_DIR_PATH + "/main.css";
 const SRC_SCRIPT_FILE_PATH = process.cwd() + SRC_SCRIPTS_DIR_PATH + "/main.js";
@@ -31,13 +32,37 @@ const BABELRC_FILE_PATH = process.cwd() + "/.babelrc";
 const ALPINEJS_CDN = `<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>`;
 
 
-// Babel and Parcel-bundler commands
+// Babel command
 const INSTALL_BABEL =
-  "npm i -D babel-loader babel-jest @babel/core @babel/preset-env @babel/cli @babel/plugin-transform-runtime @babel/runtime @babel/runtime-corejs3";
-const INSTALL_PARCEL_BUNDLER = "npm i -D parcel-bundler";
+  "npm i -D babel-loader babel-jest @babel/core @babel/cli @babel/plugin-transform-runtime @babel/runtime @babel/runtime-corejs3";
+
+// Parcel command
+const INSTALL_PARCEL = "npm i -D parcel parcel-bundler @parcel/transformer-sass";
 
 // Sass command
 const INSTALL_SASS = "npm i -D sass";
+
+// Tailwindcss command
+const INSTALL_TAILWINDCSS = "npm install -D tailwindcss postcss";
+const CONFIG_TAILWINDCSS = "npx tailwindcss init";
+const TAILWINDCSS_CONFIG_FILE_PATH = process.cwd() + "/tailwind.config.js";
+const TAILWINDCSS_CONFIG_FILE_CONTENT = `module.exports = {
+  content: [
+    "./src/**/*.{html,js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+`;
+const POSTCSSRC_FILE_PATH = process.cwd() + "/.postcssrc";
+const POSTCSSRC_FILE_CONTENT = `{
+  "plugins": {
+    "tailwindcss": {}
+  }
+}
+`;
 
 // ESLint command
 const INSTALL_ESLINT = "npm install eslint --save-dev";
@@ -71,16 +96,7 @@ const PACKAGE_JSON_CONTENT = `{
 
 // .babelrc file
 const BABELRC_CONTENT = `{
-  "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "useBuiltIns": "entry",
-        "corejs": "3",
-        "targets": {"node": "current"}
-      }
-    ]
-  ],
+  "presets": [],
   "plugins": [
     [
       "@babel/plugin-transform-runtime",
@@ -106,6 +122,7 @@ const INDEX_HTML_CONTENT = `<!DOCTYPE html>
     <title>${INDEX_HTML_TITLE}</title>
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/main.css" />
 
@@ -379,7 +396,7 @@ const INDEX_HTML_CONTENT = `<!DOCTYPE html>
             </style>
           </div>
         </div>
-        <p class="app__text">${INDEX_HTML_DEFAULT_TEXT}</p>
+        <p class="app__text text-blue-500">${INDEX_HTML_DEFAULT_TEXT}</p>
         <div class="link-wrapper">
           <a
             class="app__link"
@@ -394,12 +411,17 @@ const INDEX_HTML_CONTENT = `<!DOCTYPE html>
     </div>
 
     <!-- Script files -->
-    <script src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>
 `;
 
 // CSS files
+const INDEX_CSS_STYLES = `@tailwind base;
+@tailwind components;
+@tailwind utilities;
+`;
+
 const BASE_CSS_STYLES = `/* Box sizing rules */
 *,
 *::before,
@@ -516,6 +538,8 @@ body {
 }
 
 .app {
+  display: flex;
+  flex-direction: column;
   margin: auto;
 }
 
@@ -542,7 +566,6 @@ body {
 }
 
 .app .app__text {
-  color: var(--clr-primary-600);
   font-size: 1.25rem;
   font-weight: 400;
   padding-top: .25rem;
@@ -686,17 +709,12 @@ createFile(SRC_MAIN_CSS_FILE_PATH);
 writeToFile(INDEX_HTML_FILE_PATH, INDEX_HTML_CONTENT);
 
 // Write to CSS file
+writeToFile(SRC_INDEX_CSS_FILE_PATH, INDEX_CSS_STYLES);
 writeToFile(SRC_BASE_CSS_FILE_PATH, BASE_CSS_STYLES);
 writeToFile(SRC_MAIN_CSS_FILE_PATH, MAIN_CSS_STYLES);
 
 // Write to JS file
 writeToFile(SRC_SCRIPT_FILE_PATH, SCRIPT_CONTENT);
-
-// Create & configure .babelrc
-console.log(`${SUCCESS_LOG}`, "\nGenerating .babelrc file... \n");
-
-createFile(BABELRC_FILE_PATH);
-writeToFile(BABELRC_FILE_PATH, BABELRC_CONTENT);
 
 
 // ################################# INSTALL DEPENDENCIES #################################
@@ -709,11 +727,18 @@ runCliCommand(INSTALL_BABEL);
 
 // Install parcel-bundler
 console.log(`${INSTALL_LOG}`, "\nInstalling Parcel...\n");
-runCliCommand(INSTALL_PARCEL_BUNDLER);
+runCliCommand(INSTALL_PARCEL);
 
 // Install SASS
 console.log(`${INSTALL_LOG}`, "\nInstalling SASS...\n");
 runCliCommand(INSTALL_SASS);
+
+// Install tailwindcss
+console.log(`${INSTALL_LOG}`, "\nInstalling tailwindcss...\n");
+runCliCommand(INSTALL_TAILWINDCSS);
+runCliCommand(CONFIG_TAILWINDCSS);
+writeToFile(POSTCSSRC_FILE_PATH, POSTCSSRC_FILE_CONTENT);
+writeToFile(TAILWINDCSS_CONFIG_FILE_PATH, TAILWINDCSS_CONFIG_FILE_CONTENT);
 
 // Install ESLint
 console.log(`${INSTALL_LOG}`, "\nInstalling ESLint...\n");
@@ -726,6 +751,12 @@ runCliCommand(INSTALL_JEST);
 // Install testing-library/dom
 console.log(`${INSTALL_LOG}`, "\nInstalling DOM Testing Library...\n");
 runCliCommand(INSTALL_TESTING_LIBRARY_DOM);
+
+// Create & configure .babelrc
+console.log("\Finishing setup... \n");
+
+createFile(BABELRC_FILE_PATH);
+writeToFile(BABELRC_FILE_PATH, BABELRC_CONTENT);
 
 // Start the development server
 console.log(`${SUCCESS_LOG}`, "\nStarting development server...");

@@ -11,6 +11,7 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
 - [Babel](https://babeljs.io/)
 - [Parcel](https://parceljs.org/)
 - [SASS](https://sass-lang.com/)
+- [Tailwindcss](https://tailwindcss.com/)
 - [Alpine.js](https://alpinejs.dev/)
 - [ESLint](https://eslint.org/)
 - [Jest](https://jestjs.io/)
@@ -19,12 +20,12 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
 
 ## Features
 
-- Cross-browser compatible code. Write code for the future that is supported by browser versions of the past
+- Cross-browser compatible code using Babel. Write code for the future that is supported by browser versions of the past
 - Inbuilt SASS support
-- Integrated support for Fontawesome icons using CDN. Directly use the fontawesome icon classes out of the box without any configuration
-- Comes with integrated development server, Hot Module Reload(HMR) enabled by default and support for ES Modules
-- Comes with Alpine.js support built-in
-- Comes with ESLint support to quickly find and fix problems in your Javascript code
+- Integrated Fontawesome support using CDN. Directly use the fontawesome icon classes out of the box without any configuration
+- Comes with integrated development server, Hot Module Reload(HMR) and support for ES Modules
+- Comes with Alpine.js & tailwindcss built-in to help you write industry-level code
+- Comes with ESLint to quickly find and fix problems in your Javascript code
 - Strict mode enabled by default to ensure good code syntax
 - Comes with testing libraries - Jest & DOM Testing Library
 
