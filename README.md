@@ -29,7 +29,7 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow with no 
 
 - Cross-browser compatible code using **[Babel](https://babeljs.io/)**
 - Integrated **[Fontawesome](https://fontawesome.com/)** support using CDN
-- Hot Module Reload(HMR) and support for ES Modules using **[Parcel](https://parceljs.org/)**
+- **Hot Module Reload(HMR)** and support for **ES Modules** using **[Parcel](https://parceljs.org/)**
 - Comes with **[Alpine.js](https://alpinejs.dev/)**, **[SASS](https://sass-lang.com/)** & **[tailwindcss](https://tailwindcss.com/)** built-in to help you write industry-level code
 - **[ESLint](https://eslint.org/)** to quickly find and fix problems in your Javascript code
 - Comes with testing libraries - **[Jest](https://jestjs.io/)** & **[DOM Testing Library](https://testing-library.com/)**
