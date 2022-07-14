@@ -2,12 +2,15 @@
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
+  - [Check npm version](#check-npm-version) – How to check npm version.
   - [Creating a boilerplate](#creating-a-boilerplate) – How to setup a project boilerplate.
   - [Usage](#usage) – How to use the boilerplate to develop modern web apps.
+
 
 ## Prerequisites
 
 - [Node v5.2+](https://nodejs.org/)
+
 
 ## Comes with the following libraries and utilities
 
@@ -21,22 +24,36 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow with no 
 - [DOM Testing Library](https://testing-library.com/docs/dom-testing-library/intro/)
 - [Fontawesome Icon Library](https://fontawesome.com/)
 
+
 ## Features
 
 - Cross-browser compatible code using Babel. Write code for the future that is supported by browser versions of the past
-- Inbuilt SASS support
 - Integrated Fontawesome support using CDN. Directly use the fontawesome icon classes out of the box without any configuration
-- Comes with integrated development server, Hot Module Reload(HMR) and support for ES Modules
-- Comes with Alpine.js & tailwindcss built-in to help you write industry-level code
+- Comes with integrated development server, Hot Module Reload(HMR), Strict mode and support for ES Modules
+- Comes with Alpine.js, SASS & tailwindcss built-in to help you write industry-level code
 - Comes with ESLint to quickly find and fix problems in your Javascript code
-- Strict mode enabled by default to ensure good code syntax
 - Comes with testing libraries - Jest & DOM Testing Library
+
 
 ## Authors
 
 - [Biswajit Mukherjee](https://github.com/Biswajit-Mukherjee)
 
+
+## Check npm version
+
+To check npm version, type the following command in the terminal:
+
+```bash
+  npm -v
+```
+
+As long as it is 5.2 or later, you're good to go!
+
+
 ## Creating a boilerplate
+
+**You’ll need to have npm 5.2 or later version**. We recommend using the latest LTS version of node.
 
 **<h3>npx</h3>**
 
