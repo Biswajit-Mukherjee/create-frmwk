@@ -27,6 +27,7 @@
     "eslint",
     "jest",
     "testing-library/dom",
+    "DOM Testing",
     "starter kit"
   ],
   "author": "Biswajit Mukherjee",
