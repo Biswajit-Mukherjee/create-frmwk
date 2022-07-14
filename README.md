@@ -47,6 +47,7 @@ To know more, refer to the [usage](#Usage) section
 ## Creating the boilerplate
 Inside the working directory, it will generate the initial project structure and install the required dependencies:
 
+```bash
 <dir>
 ├── node_modules
 ├── package.json
@@ -66,6 +67,7 @@ Inside the working directory, it will generate the initial project structure and
 ├── .parcel-cache
 ├── .babelrc
 └── .postcssrc
+```
 
 
 ## Usage
