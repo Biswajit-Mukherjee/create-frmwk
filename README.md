@@ -44,11 +44,33 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
 To know more, refer to the [usage](#Usage) section
 
 
-## Creating the boilerplate
+## Usage
+
+- Create a working directory
+```bash
+  mkdir my-dir
+```
+
+- Navigate to that directory in the terminal
+```bash
+  cd my-dir
+```
+
+- Run the following command:
+```bash
+  npx create-project-boilerplate
+```
+
+Create a working directory and navigate to that directory in the terminal. Run the following command:
+
+```bash
+  npx create-project-boilerplate
+```
+
 Inside the working directory, it will generate the initial project structure and install the required dependencies:
 
 ```bash
-<dir>
+my-dir
 ├── node_modules
 ├── package.json
 ├── package-lock.json
@@ -69,16 +91,7 @@ Inside the working directory, it will generate the initial project structure and
 └── .postcssrc
 ```
 
-
-## Usage
-
-Create a working directory and navigate to that directory in the terminal. Run the following command:
-
-```bash
-  npx create-project-boilerplate
-```
-
-This will automatically generate and configure a .babelrc file, a .postcssrc file, a package-lock.json file, a package.json file and a tailwind.config.js file and install all the required dependencies for you. Once finished the server will start at localhost:3000 by default. It will rebuild your website/app everttime you make changes. Once the website/app is production ready, the dist folder can be deployed to the server.
+Once the setup is finished the server will start at [http://localhost:3000](http://localhost:3000) by default. It will rebuild your website/app everttime you make changes. Once the website/app is production ready, the dist folder can be deployed to the server.
 
 - To run tests using Jest
 
