@@ -1,6 +1,9 @@
 # create-project-boilerplate
 
-Project boilerplate for a modern ES6+ cross-browser compatible workflow to create websites and web apps using HTML, CSS, SASS and Javascript. Write industry-level code with the help of tools such as tailwindcss and alpine. It contains an index.css tailwind file, a base.css reset file and a main.css file in the src/styles folder. Uses Babel to ensure that the code you write is compatible across browsers and uses Parcel for bundling and to provide a development server. Uses ESLint for linting and Jest, DOM Testing Library for testing.
+Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
+
+  - [Creating a boilerplate](#creating-a-boilerplate) – How to setup a project boilerplate.
+  - [Usage](#usage) – How to use the boilerplate to develop modern web apps.
 
 ## Prerequisites
 
@@ -33,9 +36,9 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow to creat
 
 - [Biswajit Mukherjee](https://github.com/Biswajit-Mukherjee)
 
-## Installation
+## Creating a boilerplate
 
-- Directly execute from terminal using npx command
+** <h4>npx</h4> **
 
 ```bash
   npx create-project-boilerplate
