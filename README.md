@@ -1,4 +1,5 @@
 # create-project-boilerplate
+[![npm version](https://badge.fury.io/js/create-project-boilerplate.svg)](https://badge.fury.io/js/create-project-boilerplate)
 
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
@@ -124,4 +125,3 @@ Once the setup is finished the server will start at [http://localhost:3000](http
 ```
 
 This will open the page on a new tab in the browser. The port number can be changed to any port of your choice in the package.json file.
-
