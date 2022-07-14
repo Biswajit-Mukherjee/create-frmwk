@@ -14,15 +14,15 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow with no 
 
 ## Comes with the following libraries and utilities
 
-![Babel](https://ih1.redbubble.net/image.370343333.1917/fposter,small,wall_texture,product,750x1000.u1.jpg)
+![Babel](https://miro.medium.com/max/800/1*uHfsgDL4wCKszR7jh8dbYg.png)
 ![Parcel](https://user-images.githubusercontent.com/19409/135924939-03845d0b-e7bb-414b-89b6-e627dfa9f614.png)
-- [SASS](https://sass-lang.com/)
-- [Tailwindcss](https://tailwindcss.com/)
-- [Alpine.js](https://alpinejs.dev/)
-- [ESLint](https://eslint.org/)
-- [Jest](https://jestjs.io/)
-- [DOM Testing Library](https://testing-library.com/docs/dom-testing-library/intro/)
-- [Fontawesome Icon Library](https://fontawesome.com/)
+![SASS](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png)
+![Tailwindcss](https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.png)
+![Alpine.js](https://static.cdnlogo.com/logos/a/19/alpine.svg)
+![ESLint](https://www.vectorlogo.zone/logos/eslint/eslint-ar21.png)
+![Jest](https://jestjs.io/img/opengraph.png)
+![DOM Testing Library](https://pbs.twimg.com/media/DaGo_txU8AEE8SN.jpg)
+![Fontawesome Icon Library](https://solutionsresource.com/wp-content/uploads/2021/09/the-benefits-of-using-fontawesome-icons-on-a-website.png)
 
 
 ## Features
