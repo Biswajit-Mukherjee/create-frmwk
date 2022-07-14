@@ -48,7 +48,7 @@ To check npm version, type the following command in the terminal:
   npm -v
 ```
 
-As long as it is 5.2 or later, you're good to go!
+As long as it is **5.2 or later**, you're good to go!
 
 
 ## Creating a boilerplate
