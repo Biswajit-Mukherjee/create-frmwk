@@ -1,4 +1,4 @@
-# create-project-boilerplate
+# Create Project Boilerplate
 [![npm version](https://img.shields.io/badge/npm%20package-v2.2.3-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.3-brightgreen)
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
@@ -6,6 +6,8 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow with no 
   - [Check npm version](#check-npm-version) – How to check npm version.
   - [Creating a boilerplate](#creating-a-boilerplate) – How to setup a project boilerplate.
   - [Usage](#usage) – How to use the boilerplate to develop modern web apps.
+
+Create Project Boilerplate works on macOS, Windows, and Linux.
 
 
 ## Prerequisites
