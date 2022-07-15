@@ -18,9 +18,9 @@ Create Project Boilerplate works on macOS, Windows, and Linux.
 ## Quick Overview
 
 ```bash
-  mkdir my-dir
-  cd my-dir
-  npx create-project-boilerplate
+mkdir my-dir
+cd my-dir
+npx create-project-boilerplate
 ```
 
 Then open http://localhost:3000/ to see your app.
@@ -68,7 +68,7 @@ Create a project, and you’re good to go.
 To check npm version, type the following command in the terminal:
 
 ```bash
-  npm -v
+npm -v
 ```
 
 As long as it is **5.2 or later**, you're good to go!
@@ -81,7 +81,7 @@ As long as it is **5.2 or later**, you're good to go!
 **<h3>npx</h3>**
 
 ```bash
-  npx create-project-boilerplate
+npx create-project-boilerplate
 ```
 
 To know more, refer to the [usage](#Usage) section.
@@ -91,17 +91,17 @@ To know more, refer to the [usage](#Usage) section.
 
 - Create a working directory
 ```bash
-  mkdir my-dir
+mkdir my-dir
 ```
 
 - Navigate to that directory in the terminal
 ```bash
-  cd my-dir
+cd my-dir
 ```
 
 - Run the following command:
 ```bash
-  npx create-project-boilerplate
+npx create-project-boilerplate
 ```
 
 Inside the working directory, it will generate the initial project structure and install the required dependencies:
@@ -134,7 +134,7 @@ Once the setup is finished the server will start at [http://localhost:3000](http
 - To run tests using Jest
 
 ```bash
-    npm test
+npm test
 ```
 
 - To stop the server press **CTRL + C** (**CMD + C** for Mac/Linux).
@@ -142,7 +142,7 @@ Once the setup is finished the server will start at [http://localhost:3000](http
 - To restart the server
 
 ```bash
-    npm start
+npm start
 ```
 
 This will open the page on a new tab in the browser. The port number can be changed to any port of your choice in the package.json file.
