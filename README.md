@@ -1,5 +1,5 @@
 # create-project-boilerplate
-[![npm version](https://img.shields.io/badge/npm%20package-v2.2.2-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.2-brightgreen)
+[![npm version](https://img.shields.io/badge/npm%20package-v2.2.3-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.3-brightgreen)
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
@@ -11,6 +11,25 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow with no 
 ## Prerequisites
 
 - [npm v5.2 or later](https://nodejs.org/)
+
+
+## Quick Overview
+
+```bash
+  mkdir my-dir
+  cd my-dir
+  npx create-project-boilerplate
+```
+
+Then open http://localhost:3000/ to see your app.
+When you’re ready to deploy to production, the **dist** folder can be deployed to the server.
+
+
+## Get Started Immediately
+
+Comes with tools like Parcel, Babel, AlpineJS, Tailwindcss, ESLint, Jest and DOM Testing Library. You don’t need to install or configure anything.
+
+Create a project, and you’re good to go.
 
 
 ## Comes with the following libraries and utilities
@@ -28,6 +47,7 @@ Project boilerplate for a modern ES6+ cross-browser compatible workflow with no 
 
 ## Features
 
+- No build configuration. **dist** folder is built everytime you make changes in **src** folder
 - Cross-browser compatible code using **[Babel](https://babeljs.io/)**
 - Integrated **[Fontawesome](https://fontawesome.com/)** support using **CDN**
 - **Hot Module Reload(HMR)** and support for **ES Modules** using **[Parcel](https://parceljs.org/)**
