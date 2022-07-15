@@ -1,5 +1,5 @@
 # Create Project Boilerplate
-[![npm version](https://img.shields.io/badge/npm%20package-v2.2.3-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.3-brightgreen)
+[![npm version](https://img.shields.io/badge/npm%20package-v2.2.4-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.4-brightgreen)
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
@@ -112,20 +112,20 @@ my-dir
 ├── package.json
 ├── package-lock.json
 ├── tailwind.config.js
-├── index.html
 ├── .parcel-cache
 ├── .babelrc
 ├── .postcssrc
 ├── dist
-│   ├── index.html
-│   └── # bundled css and js files
+│   ├── # bundled css and js files
+│   └── index.html
 └── src
     ├── scripts
     │   └── main.js
-    └── styles
-        ├── base.css
-        ├── main.css
-        └── index.css
+    ├── styles
+    │   ├── base.css
+    │   ├── index.css
+    │   └── main.css
+    └── index.html
 
 ```
 
