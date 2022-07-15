@@ -1,7 +1,7 @@
 {
   "name": "create-project-boilerplate",
-  "version": "2.2.4",
-  "description": "Boilerplate template to create websites and web apps using HTML, CSS, Javascript, Babel, SASS and Parcel",
+  "version": "2.2.5",
+  "description": "Boilerplate template to create websites and web apps using tailwind, alpine, Babel, Parcel and Jest",
   "main": "index.js",
   "bin": "./bin/index.js",
   "scripts": {

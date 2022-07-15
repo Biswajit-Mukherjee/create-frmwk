@@ -145,4 +145,4 @@ npm test
 npm start
 ```
 
-This will open the page on a new tab in the browser. The port number can be changed to any port of your choice in the package.json file.
+This will open the page on a new tab in the browser. The port number can be changed to any port of your choice in the **package.json** file.
