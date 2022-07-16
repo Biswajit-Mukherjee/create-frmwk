@@ -1,5 +1,5 @@
 # Create Project Boilerplate
-[![npm version](https://img.shields.io/badge/npm%20package-v2.2.6-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.6-brightgreen)
+[![npm version](https://img.shields.io/badge/npm%20package-v2.2.7-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.7-brightgreen)
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
@@ -129,7 +129,7 @@ my-dir
 
 ```
 
-Once the setup is finished the server will start at [http://localhost:3000](http://localhost:3000) by default. It will rebuild your website/app everytime you make changes. Once the website/app is production ready, the **dist** folder can be deployed to the server.
+Once the setup is finished the server will start at [http://localhost:3000](http://localhost:3000) by default. It will rebuild your website/app automatically everytime you make changes. Once the website/app is production ready, the **dist** folder can be deployed to the server.
 
 - To run tests using Jest
 
