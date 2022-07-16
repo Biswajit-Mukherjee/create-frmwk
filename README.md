@@ -42,15 +42,15 @@ Create a project, and you’re good to go.
 
 ## Comes with the following libraries and utilities
 
+![Alpine.js](./img/alpinejs.svg)
 ![Babel](./img/babel.png)
+![DOM Testing Library](./img/dom-testing-library.jpg)
+![ESLint](./img/eslint.png)
+![Fontawesome Icon Library](./img/fontawesome.png)
+![Jest](./img/jest.png)
 ![Parcel](./img/parcel.png)
 ![SASS](./img/sass.png)
 ![Tailwindcss](./img/tailwindcss.png)
-![Alpine.js](./img/alpinejs.jpg)
-![ESLint](./img/eslint.png)
-![Jest](./img/jest.png)
-![DOM Testing Library](./img/dom-testing-library.jpg)
-![Fontawesome Icon Library](./img/fontawesome.png)
 
 
 ## Features
