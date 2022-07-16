@@ -32,7 +32,7 @@ When you’re ready to deploy to production, the **dist** folder can be deployed
 Comes with the following tools and libraries. You don’t need to install or configure anything.
 
 - **Core languages supported**: HTML, CSS, Javascript
-- **Helper libraries/ frameworks**: Alpine.js, Tailwindcss, SASS, Babel, Parcel
+- **Helper libraries/frameworks**: Alpine.js, Tailwindcss, SASS, Babel, Parcel
 - **Icon libraries**: Fontawesome
 - **Debugging tools**: ESLint
 - **Testing libraries**: Jest, DOM Testing Library
