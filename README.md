@@ -42,15 +42,15 @@ Create a project, and you’re good to go.
 
 ## Comes with the following libraries and utilities
 
-![Babel](https://miro.medium.com/max/800/1*uHfsgDL4wCKszR7jh8dbYg.png)
-![Parcel](https://user-images.githubusercontent.com/19409/135924939-03845d0b-e7bb-414b-89b6-e627dfa9f614.png)
-![SASS](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png)
-![Tailwindcss](https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.png)
-![Alpine.js](https://static.cdnlogo.com/logos/a/19/alpine.svg)
-![ESLint](https://www.vectorlogo.zone/logos/eslint/eslint-ar21.png)
-![Jest](https://jestjs.io/img/opengraph.png)
-![DOM Testing Library](https://pbs.twimg.com/media/DaGo_txU8AEE8SN.jpg)
-![Fontawesome Icon Library](https://solutionsresource.com/wp-content/uploads/2021/09/the-benefits-of-using-fontawesome-icons-on-a-website.png)
+![Babel](./img/babel.png)
+![Parcel](./img/parcel.png)
+![SASS](./img/sass.png)
+![Tailwindcss](./img/tailwindcss.png)
+![Alpine.js](./img/alpinejs.jpg)
+![ESLint](./img/eslint.png)
+![Jest](./img/jest.png)
+![DOM Testing Library](./img/dom-testing-library.jpg)
+![Fontawesome Icon Library](./img/fontawesome.png)
 
 
 ## Features
