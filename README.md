@@ -55,7 +55,7 @@ Create a project, and you’re good to go.
 
 ## Features
 
-- No build configuration. **dist** folder is built everytime you make changes in **src** folder
+- No build configuration. **dist** folder is rebuilt everytime you make changes in **src** folder
 - Cross-browser compatible code using **[Babel](https://babeljs.io/)**
 - Integrated **[Fontawesome](https://fontawesome.com/)** support using **CDN**
 - **Hot Module Reload(HMR)** and support for **ES Modules** using **[Parcel](https://parceljs.org/)**
@@ -66,7 +66,7 @@ Create a project, and you’re good to go.
 
 ## Authors
 
-- [Biswajit Mukherjee](https://github.com/Biswajit-Mukherjee)
+[Biswajit Mukherjee](https://github.com/Biswajit-Mukherjee)
 
 
 ## Check npm version
@@ -110,7 +110,7 @@ cd my-dir
 npx create-project-boilerplate
 ```
 
-Inside the working directory, it will generate the initial project structure and install the required dependencies:
+Inside the working directory, it will generate the following project structure and install all the required dependencies:
 
 ```bash
 my-dir
@@ -135,7 +135,7 @@ my-dir
 
 ```
 
-Once the setup is finished the server will start at [http://localhost:3000](http://localhost:3000) by default. It will rebuild your website/app automatically everytime you make changes. Once the website/app is production ready, the **dist** folder can be deployed to the server.
+Once the setup is finished the server will automatically start at [http://localhost:3000](http://localhost:3000) by default. It will rebuild your website/app everytime you make changes in the **src** folder. Once the website/app is production ready, the **dist** folder can be deployed to the server.
 
 - To run tests using Jest
 
@@ -143,7 +143,7 @@ Once the setup is finished the server will start at [http://localhost:3000](http
 npm test
 ```
 
-- To stop the server press **CTRL + C** (**CMD + C** for Mac/Linux).
+- To stop the server press **CTRL + C** (**CMD + C** for Mac/Linux)
 
 - To restart the server
 
