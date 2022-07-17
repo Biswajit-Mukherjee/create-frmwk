@@ -26,6 +26,7 @@ npx create-project-boilerplate
 Then open http://localhost:3000/ to see your app.
 When you’re ready to deploy to production, the **dist** folder can be deployed to the server.
 
+![cpb](./img/cpb.gif)
 
 ## Get Started Immediately
 
@@ -36,8 +37,6 @@ Comes with the following tools and libraries. You don’t need to install or con
 - **Icon libraries**: Fontawesome
 - **Debugging tools**: ESLint
 - **Testing libraries**: Jest, DOM Testing Library
-
-![cpb](./img/cpb.gif)
 
 Create a project, and you’re good to go.
 
