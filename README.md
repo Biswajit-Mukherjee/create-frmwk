@@ -43,15 +43,15 @@ Create a project, and you’re good to go.
 
 ## Comes with the following libraries and utilities
 
-![Babel](https://ibb.co/ft2239w)
-![Parcel](https://ibb.co/GPZt1TY)
-![SASS](https://ibb.co/7zyFw86)
-![Tailwindcss](https://ibb.co/9VC6nCb)
-![Alpine.js](https://ibb.co/GtzPHwG)
-![ESLint](https://ibb.co/hLn2Dzc)
-![Jest](https://ibb.co/64CDfMy)
-![DOM Testing Library](https://ibb.co/FmhH1B3)
-![Fontawesome Icon Library](https://ibb.co/pwxwLV2)
+![Babel](https://i.ibb.co/92NNxh5/babel.png)
+![Parcel](https://i.ibb.co/mznXY8Z/parcel.png)
+![SASS](https://i.ibb.co/KGyHMR3/sass.png)
+![Tailwindcss](https://i.ibb.co/3ML21Lp/tailwindcss.png)
+![Alpine.js](https://i.ibb.co/Br0snDv/alpinejs.jpg)
+![ESLint](https://i.ibb.co/tQNY8rz/eslint.png)
+![Jest](https://i.ibb.co/WcJBYhH/jest.png)
+![DOM Testing Library](https://i.ibb.co/pb1hT3w/dom-testing-library.jpg)
+![Fontawesome Icon Library](https://i.ibb.co/SyPy3YN/fontawesome.png)
 
 
 ## Features
