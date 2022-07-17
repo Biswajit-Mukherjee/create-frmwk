@@ -1,7 +1,6 @@
 # Create Project Boilerplate
 [![npm version](https://img.shields.io/badge/npm%20package-v2.2.9-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.9-brightgreen)
 
-
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
   - [Check npm version](#check-npm-version) – How to check npm version.
@@ -27,7 +26,7 @@ npx create-project-boilerplate
 Then open http://localhost:3000/ to see your app.
 When you’re ready to deploy to production, the **dist** folder can be deployed to the server.
 
-![cpb](https://ibb.co/VQTp55r)
+![cpb](https://i.ibb.co/GtR3NNB/cpb.gif)
 
 ## Get Started Immediately
 
