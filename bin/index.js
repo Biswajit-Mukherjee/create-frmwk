@@ -396,7 +396,7 @@ const INDEX_HTML_CONTENT = `<!DOCTYPE html>
             </style>
           </div>
         </div>
-        <p class="app__text text-blue-500">${INDEX_HTML_DEFAULT_TEXT}</p>
+        <p class="app__text">Edit <span>src/index.html</span> and save to see changes</p>
         <div class="link-wrapper">
           <a
             class="app__link"
@@ -513,7 +513,7 @@ select {
 }
 `;
 
-const MAIN_CSS_STYLES = `@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+const MAIN_CSS_STYLES = `@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro&display=swap');
 
 :root {
   --bg-dark: #1E1E1E;
@@ -523,6 +523,7 @@ const MAIN_CSS_STYLES = `@import url('https://fonts.googleapis.com/css2?family=I
   --clr-primary-600: #06BCEF;
   --off-white: #F4F4F4;
   --ff-prim: 'Inter', 'General Sans', Arial, Helvetica, sans-serif;
+  --ff-sec: 'Source Code Pro', monospace;
 }
 
 body {
@@ -566,10 +567,17 @@ body {
 }
 
 .app .app__text {
+  color: var(--off-white);
+  font: inherit;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 300;
   padding-top: .25rem;
   text-align: center;
+}
+
+.app .app__text > span {
+  font-family: var(--ff-sec);
+  font-weight: 400;
 }
 
 .link-wrapper {
@@ -581,7 +589,7 @@ body {
 .app .app__link {
   align-items: center;
   background: inherit;
-  color: inherit;
+  color: var(--clr-primary-400);
   display: flex;
   font-size: 2rem;
   gap: .6rem;
@@ -590,10 +598,9 @@ body {
   transition: color .15s ease;
 }
 
-.app__link:hover .link__text,
-.app__link:active .link__text {
-  color: white;
-  text-decoration: underline;
+.app__link:hover,
+.app__link:active {
+  color: var(--clr-primary-600);
 }
 
 .app .app__link .link__icon,
@@ -609,9 +616,13 @@ body {
   vertical-align: middle;
 }
 
+.app__link .link__text {
+  text-decoration: underline;
+}
+
 .app__link span {
   font-size: 1.2rem;
-  font-weight: 200;
+  font-weight: 400;
 }
 `;
 
