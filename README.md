@@ -1,6 +1,7 @@
 # Create Project Boilerplate
 [![npm version](https://img.shields.io/badge/npm%20package-v2.2.9-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.9-brightgreen)
 
+
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
   - [Check npm version](#check-npm-version) – How to check npm version.
