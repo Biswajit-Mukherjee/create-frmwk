@@ -37,6 +37,8 @@ Comes with the following tools and libraries. You don’t need to install or con
 - **Debugging tools**: ESLint
 - **Testing libraries**: Jest, DOM Testing Library
 
+![cpb](./img/cpb.gif)
+
 Create a project, and you’re good to go.
 
 
