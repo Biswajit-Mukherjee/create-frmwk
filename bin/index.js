@@ -20,6 +20,7 @@ const SRC_INDEX_CSS_FILE_PATH = process.cwd() + SRC_STYLES_DIR_PATH + "/index.cs
 const SRC_BASE_CSS_FILE_PATH = process.cwd() + SRC_STYLES_DIR_PATH + "/base.css";
 const SRC_MAIN_CSS_FILE_PATH = process.cwd() + SRC_STYLES_DIR_PATH + "/main.css";
 const SRC_SCRIPT_FILE_PATH = process.cwd() + SRC_SCRIPTS_DIR_PATH + "/main.js";
+const INDEX_HTML_FAVICON_PATH = "https://ibb.co/smRMrGc";
 const INDEX_HTML_FILE_PATH = process.cwd() + SRC_DIR_PATH + "/index.html";
 const INDEX_HTML_TITLE = "Boilerplate app";
 const INDEX_HTML_DEFAULT_TEXT = `${INDEX_HTML_TITLE} running`;
@@ -141,7 +142,7 @@ const INDEX_HTML_CONTENT = `<!DOCTYPE html>
     <!-- Favicon (Remove default PATH and add favicon PATH in href attribute) -->
     <link
       rel="shortcut icon"
-      href="https://i.ibb.co/BBKcqrZ/favicon.jpg"
+      href="${INDEX_HTML_FAVICON_PATH}"
       type="image/x-icon"
     />
 

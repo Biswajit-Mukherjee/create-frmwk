@@ -1,5 +1,5 @@
 # Create Project Boilerplate
-[![npm version](https://img.shields.io/badge/npm%20package-v2.2.8-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.8-brightgreen)
+[![npm version](https://img.shields.io/badge/npm%20package-v2.2.9-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.9-brightgreen)
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
@@ -26,7 +26,7 @@ npx create-project-boilerplate
 Then open http://localhost:3000/ to see your app.
 When you’re ready to deploy to production, the **dist** folder can be deployed to the server.
 
-![cpb](./img/cpb.gif)
+![cpb](https://ibb.co/VQTp55r)
 
 ## Get Started Immediately
 
@@ -43,15 +43,15 @@ Create a project, and you’re good to go.
 
 ## Comes with the following libraries and utilities
 
-![Babel](./img/babel.png)
-![Parcel](./img/parcel.png)
-![SASS](./img/sass.png)
-![Tailwindcss](./img/tailwindcss.png)
-![Alpine.js](./img/alpinejs.svg)
-![ESLint](./img/eslint.png)
-![Jest](./img/jest.png)
-![DOM Testing Library](./img/dom-testing-library.jpg)
-![Fontawesome Icon Library](./img/fontawesome.png)
+![Babel](https://ibb.co/ft2239w)
+![Parcel](https://ibb.co/GPZt1TY)
+![SASS](https://ibb.co/7zyFw86)
+![Tailwindcss](https://ibb.co/9VC6nCb)
+![Alpine.js](https://ibb.co/GtzPHwG)
+![ESLint](https://ibb.co/hLn2Dzc)
+![Jest](https://ibb.co/64CDfMy)
+![DOM Testing Library](https://ibb.co/FmhH1B3)
+![Fontawesome Icon Library](https://ibb.co/pwxwLV2)
 
 
 ## Features
