@@ -1,5 +1,5 @@
 # Create Project Boilerplate
-[![npm version](https://img.shields.io/badge/npm%20package-v2.2.9-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.9-brightgreen)
+[![npm version](https://img.shields.io/badge/npm%20package-v2.2.10-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.10-brightgreen)
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
@@ -33,7 +33,10 @@ When you’re ready to deploy to production, the **dist** folder can be deployed
 Comes with the following tools and libraries. You don’t need to install or configure anything.
 
 - **Core languages supported**: HTML, CSS, Javascript
-- **Helper libraries/frameworks**: Alpine.js, Tailwindcss, SASS, Babel, Parcel
+- **Helper libraries/frameworks**: Alpine.js, Tailwindcss
+- **Module bundlers**: Parcel
+- **Transcompilers**: Babel
+- **Preprocessors**: SASS
 - **Icon libraries**: Fontawesome
 - **Debugging tools**: ESLint
 - **Testing libraries**: Jest, DOM Testing Library
