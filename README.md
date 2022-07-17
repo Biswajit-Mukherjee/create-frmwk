@@ -47,7 +47,7 @@ Create a project, and you’re good to go.
 ![Parcel](https://i.ibb.co/mznXY8Z/parcel.png)
 ![SASS](https://i.ibb.co/KGyHMR3/sass.png)
 ![Tailwindcss](https://i.ibb.co/3ML21Lp/tailwindcss.png)
-![Alpine.js](https://i.ibb.co/Br0snDv/alpinejs.jpg)
+![Alpine.js](https://i.ibb.co/82sPL6y/alpinejs.jpg)
 ![ESLint](https://i.ibb.co/tQNY8rz/eslint.png)
 ![Jest](https://i.ibb.co/WcJBYhH/jest.png)
 ![DOM Testing Library](https://i.ibb.co/pb1hT3w/dom-testing-library.jpg)
