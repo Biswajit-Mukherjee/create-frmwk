@@ -47,7 +47,7 @@ Create a project, and you’re good to go.
 ## Comes with the following libraries and utilities
 
 ![Babel](https://i.ibb.co/92NNxh5/babel.png)
-![Parcel](https://i.ibb.co/mznXY8Z/parcel.png)
+![Parcel](https://i.ibb.co/YQFc20c/parcel.png)
 ![SASS](https://i.ibb.co/KGyHMR3/sass.png)
 ![Tailwindcss](https://i.ibb.co/3ML21Lp/tailwindcss.png)
 ![Alpine.js](https://i.ibb.co/82sPL6y/alpinejs.jpg)
