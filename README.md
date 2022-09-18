@@ -38,7 +38,7 @@ Comes with the following tools and libraries. You don’t need to install or con
 - **Transcompilers**: Babel
 - **Preprocessors**: SASS
 - **Icon libraries**: Fontawesome
-- **Debugging tools**: ESLint
+- **Linting tools**: ESLint
 - **Testing libraries**: Jest, DOM Testing Library
 
 Create a project, and you’re good to go.
