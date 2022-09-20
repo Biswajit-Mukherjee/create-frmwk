@@ -1,5 +1,5 @@
 # Create Project Boilerplate
-[![npm version](https://img.shields.io/badge/npm%20package-v2.2.12-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.12-brightgreen)
+[![npm version](https://img.shields.io/badge/npm%20package-v2.3.0-brightgreen)](https://img.shields.io/badge/npm%20package-v2.3.0-brightgreen)
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
@@ -132,6 +132,7 @@ my-dir
 ├── .parcel-cache
 ├── .babelrc
 ├── .postcssrc
+├── .gitignore
 ├── dist
 │   ├── # bundled css and js files
 │   └── index.html
