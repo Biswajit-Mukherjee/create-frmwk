@@ -20,17 +20,11 @@ const SRC_INDEX_CSS_FILE_PATH = process.cwd() + SRC_STYLES_DIR_PATH + "/index.cs
 const SRC_BASE_CSS_FILE_PATH = process.cwd() + SRC_STYLES_DIR_PATH + "/base.css";
 const SRC_MAIN_CSS_FILE_PATH = process.cwd() + SRC_STYLES_DIR_PATH + "/main.css";
 const SRC_SCRIPT_FILE_PATH = process.cwd() + SRC_SCRIPTS_DIR_PATH + "/main.js";
-const INDEX_HTML_FAVICON_PATH = "https://i.ibb.co/7YC6F5B/favicon.jpg";
 const INDEX_HTML_FILE_PATH = process.cwd() + SRC_DIR_PATH + "/index.html";
-const INDEX_HTML_TITLE = "Boilerplate app";
-const INDEX_HTML_DEFAULT_TEXT = `${INDEX_HTML_TITLE} running`;
-const INDEX_HTML_DEFAULT_LINK = "https://github.com/Biswajit-Mukherjee/create-project-boilerplate";
-const PROJECT_NAME = INDEX_HTML_DEFAULT_LINK.substring(38, INDEX_HTML_DEFAULT_LINK.length);
 const PORT = "3000";
 const PACKAGE_JSON_FILE_PATH = process.cwd() + "/package.json";
 const CREATE_PACKAGE_JSON_DEFAULT = "npm init -y";
 const BABELRC_FILE_PATH = process.cwd() + "/.babelrc";
-const ALPINEJS_CDN = `<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>`;
 
 
 // Babel command
@@ -38,12 +32,14 @@ const INSTALL_BABEL =
   "npm i -D babel-loader babel-jest @babel/core @babel/cli @babel/plugin-transform-runtime @babel/runtime @babel/runtime-corejs3";
 
 // Parcel command
-const INSTALL_PARCEL = "npm i -D parcel parcel-bundler @parcel/transformer-sass";
+// const INSTALL_PARCEL = "npm i -D parcel parcel-bundler @parcel/transformer-sass";
+const INSTALL_PARCEL = "npm i -D parcel @parcel/transformer-sass";
 
 // Sass command
 const INSTALL_SASS = "npm i -D sass";
 
 // Tailwindcss command
+// const INSTALL_TAILWINDCSS = "npm install -D tailwindcss postcss autoprefixer";
 const INSTALL_TAILWINDCSS = "npm install -D tailwindcss postcss";
 const CONFIG_TAILWINDCSS = "npx tailwindcss init";
 const TAILWINDCSS_CONFIG_FILE_PATH = process.cwd() + "/tailwind.config.js";
@@ -57,13 +53,26 @@ const TAILWINDCSS_CONFIG_FILE_CONTENT = `module.exports = {
   plugins: [],
 }
 `;
+
+// .postcssrc file
 const POSTCSSRC_FILE_PATH = process.cwd() + "/.postcssrc";
 const POSTCSSRC_FILE_CONTENT = `{
   "plugins": {
-    "tailwindcss": {}
+    "tailwindcss": true
   }
 }
 `;
+
+// postcss.config.js file
+// const POSTCSS_CONFIG_FILE_PATH = process.cwd() + "/postcss.config.js";
+// const POSTCSS_CONFIG_FILE_CONTENT = `module.exports = {
+//   plugins: {
+//     tailwindcss: {},
+//     autoprefixer: {},
+//   },
+// };
+// `;
+
 
 // ESLint command
 const INSTALL_ESLINT = "npm install eslint --save-dev";
@@ -85,7 +94,9 @@ const PACKAGE_JSON_CONTENT = `{
   "name": "test",
   "version": "1.0.0",
   "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "main": "index.js",
+  "targets": { "main": false },
   "scripts": {
     "start": "parcel src/index.html -p 3000 --open",
     "test": "jest"
@@ -110,7 +121,19 @@ const BABELRC_CONTENT = `{
 }
 `;
 
+const GITIGNORE_FILE_PATH = process.cwd() + "/.gitignore";
+const GITIGNORE_FILE_CONTENT = `node_modules
+.parcel-cache
+`;
+
 // HTML file
+const INDEX_HTML_FAVICON_PATH = "https://i.ibb.co/7YC6F5B/favicon.jpg";
+const INDEX_HTML_TITLE = "Boilerplate app";
+const INDEX_HTML_DEFAULT_TEXT = `${INDEX_HTML_TITLE} running`;
+const INDEX_HTML_DEFAULT_LINK = "https://github.com/Biswajit-Mukherjee/create-project-boilerplate";
+const PROJECT_NAME = "create-project-boilerplate";
+const ALPINEJS_CDN = `<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>`;
+
 const INDEX_HTML_CONTENT = `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -120,7 +143,7 @@ const INDEX_HTML_CONTENT = `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- App title -->
-    <title>${INDEX_HTML_TITLE}</title>
+    <title>Boilerplate app</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/index.css" />
@@ -142,12 +165,12 @@ const INDEX_HTML_CONTENT = `<!DOCTYPE html>
     <!-- Favicon (Remove default PATH and add favicon PATH in href attribute) -->
     <link
       rel="shortcut icon"
-      href="${INDEX_HTML_FAVICON_PATH}"
+      href="https://i.ibb.co/7YC6F5B/favicon.jpg"
       type="image/x-icon"
     />
 
     <!-- Alpine.js CDN -->
-    ${ALPINEJS_CDN}
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <!-- Scripts -->
   </head>
@@ -397,15 +420,15 @@ const INDEX_HTML_CONTENT = `<!DOCTYPE html>
             </style>
           </div>
         </div>
-        <p class="app__text">Edit <span>src/index.html</span> and save to see changes</p>
+        <p class="app__text">Edit <code>src/index.html</code> and save to see changes</p>
         <div class="link-wrapper">
           <a
             class="app__link"
-            href="${INDEX_HTML_DEFAULT_LINK}"
+            href="https://github.com/Biswajit-Mukherjee/create-project-boilerplate"
             target="_blank"
           >
             <div class="link__icon"><i class="fa-brands fa-github"></i></div>
-            <div class="link__text"><span>${PROJECT_NAME}</span></div>
+            <div class="link__text"><span>create-project-boilerplate</span></div>
           </a>
         </div>
       </div>
@@ -576,7 +599,7 @@ body {
   text-align: center;
 }
 
-.app .app__text > span {
+.app .app__text > code {
   font-family: var(--ff-sec);
   font-weight: 400;
 }
@@ -693,6 +716,12 @@ runCliCommand(CREATE_PACKAGE_JSON_DEFAULT);
 writeToFile(PACKAGE_JSON_FILE_PATH, "");
 writeToFile(PACKAGE_JSON_FILE_PATH, PACKAGE_JSON_CONTENT);
 
+// Create & configure .gitignore
+console.log(`${SUCCESS_LOG}`, "\n Generating .gitignore file... \n");
+
+createFile(GITIGNORE_FILE_PATH);
+writeToFile(GITIGNORE_FILE_PATH, GITIGNORE_FILE_CONTENT);
+
 
 // Initialize project
 console.log("\nCreating project boilerplate. This might take a while.\n");
@@ -750,6 +779,7 @@ console.log(`${INSTALL_LOG}`, "\nInstalling tailwindcss...\n");
 runCliCommand(INSTALL_TAILWINDCSS);
 runCliCommand(CONFIG_TAILWINDCSS);
 writeToFile(POSTCSSRC_FILE_PATH, POSTCSSRC_FILE_CONTENT);
+// writeToFile(POSTCSS_CONFIG_FILE_PATH, POSTCSS_CONFIG_FILE_CONTENT);
 writeToFile(TAILWINDCSS_CONFIG_FILE_PATH, TAILWINDCSS_CONFIG_FILE_CONTENT);
 
 // Install ESLint
@@ -770,8 +800,12 @@ console.log("\nFinishing setup... \n");
 createFile(BABELRC_FILE_PATH);
 writeToFile(BABELRC_FILE_PATH, BABELRC_CONTENT);
 
-// Start the development server
-console.log(`${SUCCESS_LOG}`, "\nStarting development server...");
-console.log("\nPress CTRL + C to stop the server.\n");
+// Setup finished
+console.log(`${SUCCESS_LOG}`, "\nAll set! Good to go...");
 
-runCliCommand(START);
+
+// // Start the development server
+// console.log(`${SUCCESS_LOG}`, "\nStarting development server...");
+// console.log("\nPress CTRL + C to stop the server.\n");
+
+// runCliCommand(START);

@@ -1,5 +1,5 @@
 # Create Project Boilerplate
-[![npm version](https://img.shields.io/badge/npm%20package-v2.2.11-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.11-brightgreen)
+[![npm version](https://img.shields.io/badge/npm%20package-v2.2.12-brightgreen)](https://img.shields.io/badge/npm%20package-v2.2.12-brightgreen)
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
@@ -21,6 +21,7 @@ Create Project Boilerplate works on macOS, Windows, and Linux.
 mkdir my-dir
 cd my-dir
 npx create-project-boilerplate
+npm start
 ```
 
 Then open http://localhost:3000/ to see your app.
@@ -47,7 +48,7 @@ Create a project, and you’re good to go.
 ## Comes with the following libraries and utilities
 
 ![Babel](https://i.ibb.co/92NNxh5/babel.png)
-![Parcel](https://i.ibb.co/mznXY8Z/parcel.png)
+![Parcel](https://i.ibb.co/YQFc20c/parcel.png)
 ![SASS](https://i.ibb.co/KGyHMR3/sass.png)
 ![Tailwindcss](https://i.ibb.co/3ML21Lp/tailwindcss.png)
 ![Alpine.js](https://i.ibb.co/82sPL6y/alpinejs.jpg)
@@ -62,6 +63,7 @@ Create a project, and you’re good to go.
 - No build configuration. **dist** folder is rebuilt everytime you make changes in **src** folder
 - Cross-browser compatible code using **[Babel](https://babeljs.io/)**
 - Integrated **[Fontawesome](https://fontawesome.com/)** support using **CDN**
+- Support for **[CSS Modules](https://parceljs.org/languages/css/#css-modules)** using **[Parcel](https://parceljs.org/)**
 - **Hot Module Reload(HMR)** and support for **ES Modules** using **[Parcel](https://parceljs.org/)**
 - Built-in **[Alpine.js](https://alpinejs.dev/)**, **[SASS](https://sass-lang.com/)** & **[tailwindcss](https://tailwindcss.com/)** support to help you write industry-level code
 - **[ESLint](https://eslint.org/)** to quickly find and fix problems in your Javascript code
@@ -105,16 +107,18 @@ mkdir my-dir
 ```
 
 - Navigate to that directory in the terminal
+
 ```bash
 cd my-dir
 ```
 
-- Run the following command:
+- Run the following command
+
 ```bash
 npx create-project-boilerplate
 ```
 
-Inside the working directory, it will generate the following project structure and install all the required dependencies:
+Inside the working directory, it will generate the following project structure and install all the required dependencies
 
 ```bash
 my-dir
@@ -139,7 +143,12 @@ my-dir
 
 ```
 
-Once the setup is finished the server will automatically start at [http://localhost:3000](http://localhost:3000) by default. It will rebuild your website/app everytime you make changes in the **src** folder. Once the website/app is production ready, the **dist** folder can be deployed to the server.
+Once the setup is finished, run the following command
+
+```bash
+npm start
+```
+This will start the server at [http://localhost:3000](http://localhost:3000) by default. It will rebuild your website/app everytime you make changes in the **src** folder. Once the website/app is production ready, the **dist** folder can be deployed to the server.
 
 - To run tests using Jest
 
