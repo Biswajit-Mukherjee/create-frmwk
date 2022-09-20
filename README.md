@@ -94,7 +94,6 @@ As long as it is **5.2 or later**, you're good to go!
 
 ```bash
 npx create-project-boilerplate
-npm start
 ```
 
 To know more, refer to the [usage](#Usage) section.
@@ -143,7 +142,7 @@ my-dir
     └── index.html
 ```
 
-- Once the setup is finished, run the following command
+- Once the setup is finished, run the following command to start the server
 
 ```bash
 npm start
