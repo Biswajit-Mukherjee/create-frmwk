@@ -37,7 +37,8 @@ Comes with the following tools and libraries. You don’t need to install or con
 - **Helper libraries/frameworks**: Alpine.js, Tailwindcss
 - **Module bundlers**: Parcel
 - **Transcompilers**: Babel
-- **Preprocessors and Autoprefixers**: SASS & PostCSS
+- **Preprocessors**: SASS
+- **Autoprefixers**: PostCSS
 - **Icon libraries**: Fontawesome
 - **Linting tools**: ESLint
 - **Testing libraries**: Jest, DOM Testing Library
