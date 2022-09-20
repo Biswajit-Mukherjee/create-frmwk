@@ -37,7 +37,7 @@ Comes with the following tools and libraries. You don’t need to install or con
 - **Helper libraries/frameworks**: Alpine.js, Tailwindcss
 - **Module bundlers**: Parcel
 - **Transcompilers**: Babel
-- **Preprocessors**: SASS
+- **Preprocessors and Autoprefixers**: SASS & PostCSS
 - **Icon libraries**: Fontawesome
 - **Linting tools**: ESLint
 - **Testing libraries**: Jest, DOM Testing Library
@@ -50,6 +50,7 @@ Create a project, and you’re good to go.
 ![Babel](https://i.ibb.co/92NNxh5/babel.png)
 ![Parcel](https://i.ibb.co/YQFc20c/parcel.png)
 ![SASS](https://i.ibb.co/KGyHMR3/sass.png)
+![PostCSS](https://i.ibb.co/4RN1BQH/postcss.png)
 ![Tailwindcss](https://i.ibb.co/3ML21Lp/tailwindcss.png)
 ![Alpine.js](https://i.ibb.co/82sPL6y/alpinejs.jpg)
 ![ESLint](https://i.ibb.co/tQNY8rz/eslint.png)
@@ -64,6 +65,7 @@ Create a project, and you’re good to go.
 - Cross-browser compatible code using **[Babel](https://babeljs.io/)**
 - Integrated **[Fontawesome](https://fontawesome.com/)** support using **CDN**
 - Support for **[CSS Modules](https://parceljs.org/languages/css/#css-modules)** using **[Parcel](https://parceljs.org/)**
+- Support for autoprefixers using **[PostCSS](https://postcss.org/)**
 - **Hot Module Reload(HMR)** and support for **ES Modules** using **[Parcel](https://parceljs.org/)**
 - Built-in **[Alpine.js](https://alpinejs.dev/)**, **[SASS](https://sass-lang.com/)** & **[tailwindcss](https://tailwindcss.com/)** support to help you write industry-level code
 - **[ESLint](https://eslint.org/)** to quickly find and fix problems in your Javascript code
