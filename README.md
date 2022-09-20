@@ -94,6 +94,7 @@ As long as it is **5.2 or later**, you're good to go!
 
 ```bash
 npx create-project-boilerplate
+npm start
 ```
 
 To know more, refer to the [usage](#Usage) section.
@@ -112,7 +113,7 @@ mkdir my-dir
 cd my-dir
 ```
 
-- Run the following command
+- Run the following command to create the project structure
 
 ```bash
 npx create-project-boilerplate
@@ -140,10 +141,9 @@ my-dir
     │   ├── index.css
     │   └── main.css
     └── index.html
-
 ```
 
-Once the setup is finished, run the following command
+- Once the setup is finished, run the following command
 
 ```bash
 npm start
