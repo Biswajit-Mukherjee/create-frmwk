@@ -1,5 +1,5 @@
 # Create Project Boilerplate
-[![npm version](https://img.shields.io/badge/npm%20package-v2.3.0-brightgreen)](https://img.shields.io/badge/npm%20package-v2.3.0-brightgreen)
+[![npm version](https://img.shields.io/badge/npm%20package-v2.3.1-brightgreen)](https://img.shields.io/badge/npm%20package-v2.3.1-brightgreen)
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
@@ -121,7 +121,7 @@ cd my-dir
 npx create-project-boilerplate
 ```
 
-Inside the working directory, it will generate the following project structure and install all the required dependencies
+Inside the working directory, it will generate the following project structure and install and configure all the required dependencies
 
 ```bash
 my-dir
@@ -151,7 +151,7 @@ my-dir
 ```bash
 npm start
 ```
-This will start the server at [http://localhost:3000](http://localhost:3000) by default. It will rebuild your website/app everytime you make changes in the **src** folder. Once the website/app is production ready, the **dist** folder can be deployed to the server.
+This will build and start the server at [http://localhost:3000](http://localhost:3000) by default. It will rebuild your website/app everytime you make changes in the **src** folder. Once the website/app is production ready, the **dist** folder can be deployed to the server.
 
 - To run tests using Jest
 
