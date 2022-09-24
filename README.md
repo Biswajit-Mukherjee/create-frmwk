@@ -27,7 +27,7 @@ npm start
 Then open http://localhost:3000/ to see your app.
 When you’re ready to deploy to production, the **dist** folder can be deployed to the server.
 
-![demo](https://i.ibb.co/NFZVdTH/cpb-demo.gif)
+![demo](https://i.ibb.co/qMnDHg5/cpb.gif)
 
 ## Get Started Immediately
 
