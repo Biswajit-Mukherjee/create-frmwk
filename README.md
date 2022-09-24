@@ -48,16 +48,16 @@ Create a project, and you’re good to go.
 
 ## Comes with the following libraries and utilities
 
-![Babel](https://i.ibb.co/92NNxh5/babel.png)
-![Parcel](https://i.ibb.co/YQFc20c/parcel.png)
-![SASS](https://i.ibb.co/KGyHMR3/sass.png)
-![PostCSS](https://i.ibb.co/4RN1BQH/postcss.png)
-![Tailwindcss](https://i.ibb.co/3ML21Lp/tailwindcss.png)
-![Alpine.js](https://i.ibb.co/82sPL6y/alpinejs.jpg)
-![ESLint](https://i.ibb.co/tQNY8rz/eslint.png)
-![Jest](https://i.ibb.co/WcJBYhH/jest.png)
-![DOM Testing Library](https://i.ibb.co/pb1hT3w/dom-testing-library.jpg)
-![Fontawesome Icon Library](https://i.ibb.co/SyPy3YN/fontawesome.png)
+![Babel](https://res.cloudinary.com/dbnt8bskc/image/upload/v1664002075/Projects/create-project-boilerplate/babel_tnea8r.png)
+![Parcel](https://res.cloudinary.com/dbnt8bskc/image/upload/v1664002075/Projects/create-project-boilerplate/Parcel-mb_hsbadm.png)
+![SASS](https://res.cloudinary.com/dbnt8bskc/image/upload/v1664002075/Projects/create-project-boilerplate/sass_joaldy.png)
+![PostCSS](https://res.cloudinary.com/dbnt8bskc/image/upload/v1664002075/Projects/create-project-boilerplate/postcss_b3fecc.png)
+![Tailwindcss](https://res.cloudinary.com/dbnt8bskc/image/upload/v1664002075/Projects/create-project-boilerplate/tailwindcss_y7hxh1.png)
+![Alpine.js](https://res.cloudinary.com/dbnt8bskc/image/upload/v1664002075/Projects/create-project-boilerplate/alpinejs_ijeh9g.jpg)
+![ESLint](https://res.cloudinary.com/dbnt8bskc/image/upload/v1664002074/Projects/create-project-boilerplate/eslint_tihzz6.png)
+![Jest](https://res.cloudinary.com/dbnt8bskc/image/upload/v1664002074/Projects/create-project-boilerplate/jest_p9ggno.png)
+![DOM Testing Library](https://res.cloudinary.com/dbnt8bskc/image/upload/v1664002074/Projects/create-project-boilerplate/dom-testing-library_e0uj88.jpg)
+![Fontawesome Icon Library](https://res.cloudinary.com/dbnt8bskc/image/upload/v1664002075/Projects/create-project-boilerplate/fontawesome_dlbby8.png)
 
 
 ## Features
