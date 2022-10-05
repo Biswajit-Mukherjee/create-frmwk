@@ -27,7 +27,7 @@ npm start
 Then open http://localhost:3000/ to see your app.
 When you’re ready to deploy to production, the **dist** folder can be deployed to the server.
 
-![demo](https://res.cloudinary.com/dbnt8bskc/image/upload/v1664006663/Projects/create-project-boilerplate/demo_puel3y.gif)
+![demo](https://res.cloudinary.com/biswajit-mukherjee/image/upload/v1664006663/Projects/create-project-boilerplate/demo_puel3y.gif)
 
 ## Get Started Immediately
 
