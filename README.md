@@ -48,16 +48,7 @@ Create a project, and you’re good to go.
 
 ## Comes with the following libraries and utilities
 
-![Babel](https://res.cloudinary.com/biswajit-mukherjee/image/upload/v1664002075/Projects/create-project-boilerplate/babel_tnea8r.png)
-![Parcel](https://res.cloudinary.com/biswajit-mukherjee/image/upload/v1664002075/Projects/create-project-boilerplate/Parcel-mb_hsbadm.png)
-![SASS](https://res.cloudinary.com/biswajit-mukherjee/image/upload/v1664002075/Projects/create-project-boilerplate/sass_joaldy.png)
-![PostCSS](https://res.cloudinary.com/biswajit-mukherjee/image/upload/v1664002075/Projects/create-project-boilerplate/postcss_b3fecc.png)
-![Tailwindcss](https://res.cloudinary.com/biswajit-mukherjee/image/upload/v1664002075/Projects/create-project-boilerplate/tailwindcss_y7hxh1.png)
-![Alpine.js](https://res.cloudinary.com/biswajit-mukherjee/image/upload/v1664002075/Projects/create-project-boilerplate/alpinejs_ijeh9g.jpg)
-![ESLint](https://res.cloudinary.com/biswajit-mukherjee/image/upload/v1664002074/Projects/create-project-boilerplate/eslint_tihzz6.png)
-![Jest](https://res.cloudinary.com/biswajit-mukherjee/image/upload/v1664002074/Projects/create-project-boilerplate/jest_p9ggno.png)
-![DOM Testing Library](https://res.cloudinary.com/biswajit-mukherjee/image/upload/v1664002074/Projects/create-project-boilerplate/dom-testing-library_e0uj88.jpg)
-![Fontawesome Icon Library](https://res.cloudinary.com/biswajit-mukherjee/image/upload/v1664002075/Projects/create-project-boilerplate/fontawesome_dlbby8.png)
+![Libraries](https://res.cloudinary.com/biswajit-mukherjee/image/upload/v1668768760/Projects/create-project-boilerplate/cpb-images_y3azmq.jpg)
 
 
 ## Features
