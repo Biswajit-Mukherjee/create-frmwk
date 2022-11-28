@@ -1,5 +1,5 @@
 # Create Project Boilerplate
-[![npm version](https://img.shields.io/badge/npm%20package-v2.3.1-brightgreen)](https://img.shields.io/badge/npm%20package-v2.3.1-brightgreen)
+[![npm version](https://img.shields.io/badge/npm%20package-v2.3.2-brightgreen)](https://img.shields.io/badge/npm%20package-v2.3.2-brightgreen)
 
 Project boilerplate for a modern ES6+ cross-browser compatible workflow with no build configuration.
 
